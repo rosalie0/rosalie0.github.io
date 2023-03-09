@@ -1,7 +1,13 @@
 import React from "react";
+import MyCanvas from "./MyCanvas";
 
 function Homepage() {
-  return <div>homepage!</div>;
+  return (
+    <div>
+      homepage!
+      <MyCanvas />
+    </div>
+  );
 }
 
 export default Homepage;
