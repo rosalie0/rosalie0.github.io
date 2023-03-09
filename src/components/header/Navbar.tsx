@@ -7,13 +7,13 @@ function Navbar() {
     justifyContent: "space-between",
     alignItems: "center",
     gap: "1rem",
+    backgroundColor: "yellow",
   };
   const nameInNavbarStyle = {
     //tbd
   };
   return (
     <div className="navbar" style={navbarStyle}>
-      <h3 className="text-xl text-emerald-600">Rosalie Newman</h3>
       <Link className=" text-sky-500 hover:text-sky-700" to={"/about"}>
         about
       </Link>
