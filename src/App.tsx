@@ -1,6 +1,6 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/header/Navbar";
 import { FaCode } from "react-icons/fa";
 
 // Components:
