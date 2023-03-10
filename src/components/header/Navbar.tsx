@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const navbarStyle = {
@@ -14,7 +14,6 @@ function Navbar() {
 
   const activeLinkStyles = "text-violet-500 cursor-default";
   const notActiveLinkStyles = "text-sky-500 hover:text-sky-300";
-  const returnLinkStyles = activeLinkStyles;
 
   return (
     <div className="navbar" style={navbarStyle}>
