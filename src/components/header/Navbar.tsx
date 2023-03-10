@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const navbarStyle = {
@@ -8,18 +8,50 @@ function Navbar() {
     alignItems: "center",
     gap: "1rem",
     backgroundColor: "yellow",
+    paddingLeft: "1rem",
+    paddingRight: "1rem",
   };
-  const nameInNavbarStyle = {
-    //tbd
-  };
+
+  const activeLinkStyles = "text-violet-500 cursor-default";
+  const notActiveLinkStyles = "text-sky-500 hover:text-sky-300";
+
   return (
     <div className="navbar" style={navbarStyle}>
-      <Link className=" text-sky-500 hover:text-sky-700" to={"/about"}>
-        about
-      </Link>
-      <Link to={"/projects"}>projects</Link>
-      <Link to={"/art"}>art</Link>
-      <Link to={"/resume"}>resume</Link>
+      <NavLink
+        to={"/about"}
+        className={({ isActive }) =>
+          isActive ? activeLinkStyles : notActiveLinkStyles
+        }
+      >
+        {"<"}about{">"}
+      </NavLink>
+      <NavLink
+        to={"/projects"}
+        className={({ isActive }) =>
+          isActive ? activeLinkStyles : notActiveLinkStyles
+        }
+      >
+        {"<"}projects{">"}
+      </NavLink>
+      <NavLink
+        to={"/art"}
+        className={({ isActive }) =>
+          isActive ? activeLinkStyles : notActiveLinkStyles
+        }
+      >
+        {"<"}art{">"}
+      </NavLink>
+      <NavLink
+        to={"/resume"}
+        className={({ isActive }) =>
+          isActive ? activeLinkStyles : notActiveLinkStyles
+        }
+      >
+        {"<"}cv{">"}
+      </NavLink>
+      <NavLink to={"/"} end className={notActiveLinkStyles}>
+        return;
+      </NavLink>
     </div>
   );
 }
