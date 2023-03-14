@@ -9,7 +9,7 @@ import Header from "./components/header/Header";
 function App() {
   return (
     <div className="App bg-rose-50" style={{ height: "100vh" }}>
-      <FaCode />
+      {/* <FaCode /> */}
       <Header />
       <RouteContainer />
     </div>
