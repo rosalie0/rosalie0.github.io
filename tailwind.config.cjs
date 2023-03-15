@@ -9,10 +9,12 @@ module.exports = {
       center: true,
     },
     extend: {
-      // fontFamily: {
-      //   noto: ["Noto Sans Japanese", "sans"],
-      //   body: ["Fragment Mono", "monospace"],
-      // },
+      fontFamily: {
+        noto: ["Noto Sans Japanese", "sans"],
+        frag: ["Fragment Mono", "monospace"],
+        source: ["Source Sans Pro", "sans-serif"],
+        neon: ["Tilt Neon", "sans-serif"],
+      },
       //   colors: {
       //     "green-light": "#A7F3D0", //emerald-300
       //     "green-mid": "#059669", //emerald-600

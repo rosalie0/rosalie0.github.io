@@ -16,7 +16,7 @@ function App() {
   return (
     <div
       className="App bg-rose-50 dark:bg-slate-900"
-      style={{ height: "100vh" }}
+      style={{ minHeight: "100vh" }}
     >
       <Header theme={theme} setTheme={setTheme} />
       <RouteContainer />
