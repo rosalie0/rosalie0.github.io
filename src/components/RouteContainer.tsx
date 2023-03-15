@@ -5,7 +5,7 @@ import Art from "./Art";
 import Contact from "./Contact";
 import Error from "./Error";
 import Homepage from "./Homepage";
-import Projects from "./Projects";
+import Projects from "./projects/Projects";
 import Resume from "./Resume";
 
 function RouteContainer() {
