@@ -21,14 +21,14 @@ function Projects() {
             // for 'odd' projects, reverse the flex direction
             <div
               key={project.title}
-              className="flex flex-col md:flex-row p-2 gap-2 items-center md:odd:flex-row-reverse border-solid border-2 border-emerald-600 rounded-lg text-rose-900 bg-emerald-50/75 hover:bg-emerald-50"
+              className="flex flex-col md:flex-row md:p-2 gap-2 items-center md:odd:flex-row-reverse border-solid border-2 border-emerald-600 rounded-lg text-rose-900 bg-emerald-50/75 hover:bg-emerald-50 shadow-md"
             >
               <img
                 width={"500px"}
                 src={project.image}
                 alt="Screenshot previewing the web app"
               />
-              <div className="project-info">
+              <div className="p-2 md:p-2 project-info">
                 <h4 className="font-frag text-2xl">{project.title}</h4>
                 <h5 className="font-frag">{project.subtitle}</h5>
                 <p className="whitespace-pre-wrap font-source text-md leading-snug text-left">
