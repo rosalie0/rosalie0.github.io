@@ -21,7 +21,7 @@ function Projects() {
             // for 'odd' projects, reverse the flex direction
             <div
               key={project.title}
-              className="flex p-2 items-center odd:flex-row-reverse border-solid border-2 border-emerald-600"
+              className="flex flex-col md:flex-row p-2 gap-2 items-center md:odd:flex-row-reverse border-solid border-2 border-emerald-600 rounded-lg text-rose-900 bg-emerald-50/75 hover:bg-emerald-50"
             >
               <img
                 width={"500px"}
@@ -31,7 +31,7 @@ function Projects() {
               <div className="project-info">
                 <h4 className="font-frag text-2xl">{project.title}</h4>
                 <h5 className="font-frag">{project.subtitle}</h5>
-                <p className="whitespace-pre-wrap text-sm leading-snug text-left">
+                <p className="whitespace-pre-wrap font-source text-md leading-snug text-left">
                   {project.description}
                 </p>
 
