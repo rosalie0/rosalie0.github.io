@@ -5,15 +5,5 @@
 @tailwind utilities;
 
 @layer components {
-  body {
-    font-family: "Noto Sans Japanese", Verdana, Tahoma, sans-serif;
-  }
-
-  .nameInHeader {
-    font-size: 2rem;
-    font-family: "Tilt Neon", sans-serif;
-  }
-  .navLink {
-    font-family: "Fragment Mono", monospace;
-  }
+  /* body {font-family: "Noto Sans Japanese", Verdana, Tahoma, sans-serif;} */
 }
