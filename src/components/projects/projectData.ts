@@ -1,3 +1,5 @@
+import codenamesImage from "../../assets/projects/codenames-preview700.png";
+
 class Project {
   deployLink: string;
   githubLink: string;
