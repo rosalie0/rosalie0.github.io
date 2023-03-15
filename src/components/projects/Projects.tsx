@@ -10,7 +10,7 @@ function Projects() {
     <section id="projects">
       <div className="container px-5 py-10 text-center lg:px-40">
         <div className="flex flex-col items-center">
-          <HiOutlineCode className="text-3xl text-emerald-600" />
+          <HiOutlineCode className="text-3xl dark:text-emerald-50 text-emerald-600" />
           <h2 className="text-2xl text-emerald-600 dark:text-emerald-50 font-frag font-bold">
             Apps I've built
           </h2>
@@ -21,7 +21,7 @@ function Projects() {
             // for 'odd' projects, reverse the flex direction
             <div
               key={project.title}
-              className="flex flex-col md:flex-row md:p-2 gap-2 items-center md:odd:flex-row-reverse border-solid border-2 border-emerald-600 rounded-lg text-rose-900 bg-emerald-50/75 hover:bg-emerald-50 shadow-md"
+              className="flex flex-col md:flex-row md:p-2 gap-2 items-center md:odd:flex-row-reverse border-solid border-2 dark:border-emerald-50 border-emerald-600 rounded-lg text-rose-900 dark:text-emerald-100 dark:bg-emerald-900/50 bg-emerald-50/75 hover:bg-emerald-50 shadow-md"
             >
               <img
                 width={"500px"}
