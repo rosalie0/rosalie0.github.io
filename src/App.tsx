@@ -15,7 +15,10 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="App bg-rose-50" style={{ height: "100vh" }}>
+    <div
+      className="App bg-rose-50 dark:bg-slate-900"
+      style={{ height: "100vh" }}
+    >
       <Header />
       <DarkModeButton theme={theme} setTheme={setTheme} />
       <RouteContainer />
