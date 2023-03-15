@@ -12,8 +12,8 @@ function Navbar() {
     paddingRight: "1rem",
   };
 
-  const activeLinkStyles = "text-violet-500 cursor-default";
-  const notActiveLinkStyles = "text-sky-500 hover:text-sky-300";
+  const activeLinkStyles = "font-frag text-violet-500 cursor-default";
+  const notActiveLinkStyles = "font-frag text-sky-500 hover:text-sky-300";
 
   return (
     <div className="navbar" style={navbarStyle}>
