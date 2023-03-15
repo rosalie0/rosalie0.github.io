@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 // Components:
 import RouteContainer from "./components/RouteContainer";
 import Header from "./components/header/Header";
-import DarkModeButton from "./components/DarkModeButton";
 
 function App() {
   // Piece of state for dark/light mode
@@ -19,8 +18,7 @@ function App() {
       className="App bg-rose-50 dark:bg-slate-900"
       style={{ height: "100vh" }}
     >
-      <Header />
-      <DarkModeButton theme={theme} setTheme={setTheme} />
+      <Header theme={theme} setTheme={setTheme} />
       <RouteContainer />
     </div>
   );
