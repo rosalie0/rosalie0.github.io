@@ -21,7 +21,7 @@ function Projects() {
                   <button>Deploy</button>
                 </a>
                 <a href={project.githubLink}>
-                  <button>Github</button>
+                  <button className="rounded-md bg-primary">Github</button>
                 </a>
               </div>
               <p>{project.description}</p>
