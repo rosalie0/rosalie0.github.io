@@ -1,15 +1,9 @@
 import React from "react";
-import Socials from "./Socials";
-import MyCanvas from "./canvas/MyCanvas";
+
+import CanvasContainer from "./canvas/CanvasContainer";
 
 function Homepage() {
-  return (
-    <div>
-      <MyCanvas />
-
-      <Socials />
-    </div>
-  );
+  return <CanvasContainer />;
 }
 
 export default Homepage;
