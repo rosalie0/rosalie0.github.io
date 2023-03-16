@@ -1,5 +1,7 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import React, { Suspense, useRef } from "react";
+import Cat from "./Cat";
+import CatSitting from "./CatSitting";
 import Cube from "./Cube";
 import PlasticCube from "./PlasticCube";
 
@@ -9,7 +11,9 @@ function MyCanvas() {
       <Canvas camera={{ position: [10, 10, -5], fov: 75 }}>
         <Suspense fallback={null}>
           {/* <Cube /> */}
-          <PlasticCube />
+          {/* <PlasticCube /> */}
+          {/* <Cat /> */}
+          <CatSitting />
           <ambientLight />
           <pointLight position={[5, 5, 5]} />
         </Suspense>

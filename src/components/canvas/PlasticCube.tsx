@@ -16,10 +16,9 @@ function PlasticCube() {
   });
 
   // Create matcap material
-  //src / assets / matcap_plastic_yellow.jpg;
   const matcap = useTexture(matcapJPG);
-  const matcapURL = useTexture("./src/assets/matcap_plastic_yellow.jpg");
-  console.log(matcap, matcapURL);
+  // You can also do this if you don't want to import it as module
+  // const matcapURL = useTexture("./src/assets/matcap_plastic_yellow.jpg");
 
   return (
     <>
