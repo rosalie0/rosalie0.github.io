@@ -42,7 +42,7 @@ function Navbar() {
         {"<"}art{">"}
       </NavLink>
       <NavLink
-        to={"/resume"}
+        to={"/cv"}
         className={({ isActive }) =>
           isActive ? activeLinkStyles : notActiveLinkStyles
         }

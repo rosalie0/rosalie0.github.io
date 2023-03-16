@@ -6,7 +6,7 @@ import Contact from "./Contact";
 import Error from "./Error";
 import Homepage from "./Homepage";
 import Projects from "./projects/Projects";
-import Resume from "./Resume";
+import CVContainer from "./cv/CVContainer";
 
 function RouteContainer() {
   return (
@@ -17,7 +17,7 @@ function RouteContainer() {
       <Route path="/contact" element={<Contact />} />
 
       <Route path="/projects" element={<Projects />} />
-      <Route path="/resume" element={<Resume />} />
+      <Route path="/cv" element={<CVContainer />} />
 
       <Route path="/" element={<Homepage />} />
       <Route path="/*" element={<Error />} />
