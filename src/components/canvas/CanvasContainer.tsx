@@ -1,5 +1,5 @@
 import React from "react";
-import SocialsContainer from "../SocialsContainer";
+import SocialsContainer from "../socials/SocialsContainer";
 import MyCanvas from "./MyCanvas";
 
 const CanvasContainer = () => {
