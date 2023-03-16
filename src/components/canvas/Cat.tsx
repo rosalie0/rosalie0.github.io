@@ -1,6 +1,4 @@
-import { useFrame } from "@react-three/fiber";
-import React, { useRef } from "react";
-import { Mesh } from "three";
+import React from "react";
 import matcapYellow from "../../assets/matcap_plastic_yellow.jpg";
 import matcapMint from "../../assets/matcap_plastic_mint.jpg";
 import matcapMagenta from "../../assets/matcap_plastic_magenta.jpg";
@@ -14,19 +12,8 @@ import {
   Float,
 } from "@react-three/drei";
 import { degToRad } from "three/src/math/MathUtils";
-import { degreesToRadians } from "./helper";
 
 function Cat() {
-  // Declare refs for animation here
-  const ref = useRef<Mesh>(null!);
-
-  // Rotation Animation
-  useFrame(() => {
-    //ref.current.rotation.y -= 0.001;
-    //ref.current.rotation.x -= 0.001;
-    //ref.current.rotation.z += 0.0001;
-  });
-
   // Create matcap material
   const matcap = useTexture(matcapYellow);
 
@@ -35,18 +22,19 @@ function Cat() {
   const { nodes } = useGLTF("./src/assets/cat.gltf");
 
   return (
-    <Float>
+    <Float
+      floatingRange={[-0.5, 0.5]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
+    >
       <mesh
         geometry={nodes.ORIGAMI_Chat.geometry}
         scale={0.1}
         castShadow
-        ref={ref}
-        position={[0, 2.5, 0]}
-        rotation={[0, degToRad(30), 0]}
+        position={[0, 1, 0]}
+        rotation={[0, degToRad(150), 0]}
       >
         {/* <meshLambertMaterial /> */}
-        <meshMatcapMaterial matcap={matcap} />
-        {/* <MeshWobbleMaterial color={"yellow"} factor={0.05} speed={2} /> */}
+        {/* <meshMatcapMaterial matcap={matcap} /> */}
+        <MeshWobbleMaterial color={"black"} factor={0.05} speed={1} />
       </mesh>
     </Float>
   );
