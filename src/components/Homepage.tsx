@@ -1,12 +1,9 @@
 import React from "react";
-import MyCanvas from "./canvas/MyCanvas";
+
+import CanvasContainer from "./canvas/CanvasContainer";
 
 function Homepage() {
-  return (
-    <div>
-      <MyCanvas />
-    </div>
-  );
+  return <CanvasContainer />;
 }
 
 export default Homepage;
