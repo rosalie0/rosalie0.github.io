@@ -3,10 +3,6 @@ import matcapYellow from "../../assets/matcap_plastic_yellow.jpg";
 import matcapMint from "../../assets/matcap_plastic_mint.jpg";
 import matcapMagenta from "../../assets/matcap_plastic_magenta.jpg";
 import matcapDarkPink from "../../assets/matcap_dark_pink.png";
-
-//import catGLTF from "../../assets/cat.gltf";
-// import * as c from "public/cat.gltf";
-
 import {
   useTexture,
   useGLTF,
@@ -14,6 +10,7 @@ import {
   Float,
 } from "@react-three/drei";
 import { degToRad } from "three/src/math/MathUtils";
+import catGltfUrl from "../../assets/cat.gltf?url";
 
 function Cat() {
   // Create matcap material
@@ -21,7 +18,8 @@ function Cat() {
 
   // Have to use @ts-ignore because drei does not have TS types.
   // @ts-ignore
-  const { nodes } = useGLTF("/cat.gltf");
+  //const { nodes } = useGLTF("/cat.gltf");
+  const { nodes } = useGLTF(catGltfUrl);
 
   return (
     <Float
@@ -41,5 +39,7 @@ function Cat() {
     </Float>
   );
 }
-useGLTF.preload("/cat.gltf");
+// useGLTF.preload("/cat.gltf");
+useGLTF.preload(catGltfUrl);
+
 export default Cat;
