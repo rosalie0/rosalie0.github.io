@@ -14,23 +14,24 @@ function CatSitting() {
   const ref = useRef<Mesh>(null!);
 
   // Rotation Animation
-  useFrame(() => {
-    ref.current.rotation.y -= 0.005;
-    // boxRef.current.rotation.y -= 0.005;
-    // boxRef.current.rotation.z += 0.01;
-  });
+  // useFrame(() => {
+  //   ref.current.rotation.y -= 0.005;
+  //   // boxRef.current.rotation.y -= 0.005;
+  //   // boxRef.current.rotation.z += 0.01;
+  // });
 
   // Create matcap material
   const matcap = useTexture(matcapDarkPink);
 
   // Have to use @ts-ignore because drei does not have TS types.
   // @ts-ignore
-  const { nodes } = useGLTF("./src/assets/cat-sitting.gltf");
+  const nodes = useGLTF("./src/assets/scene.gltf");
   console.log(nodes);
   return (
     <mesh
+      position={[2, 2, 2]}
       geometry={nodes.cat2Plane_group42.geometry}
-      scale={0.25}
+      scale={2}
       castShadow
       receiveShadow
       ref={ref}
@@ -39,5 +40,5 @@ function CatSitting() {
     </mesh>
   );
 }
-useGLTF.preload("./src/assets/cat-sitting.gltf");
+useGLTF.preload("./src/assets/scene.gltf");
 export default CatSitting;
