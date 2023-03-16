@@ -22,7 +22,7 @@ function PlasticCube() {
 
   return (
     <>
-      <mesh castShadow receiveShadow ref={boxRef}>
+      <mesh castShadow position={[-3, 8, -10]} receiveShadow ref={boxRef}>
         <boxGeometry args={[6, 6, 2]} />
         <meshMatcapMaterial matcap={matcap} />
       </mesh>
