@@ -4,7 +4,7 @@ import matcapMint from "../../assets/matcap_plastic_mint.jpg";
 import matcapMagenta from "../../assets/matcap_plastic_magenta.jpg";
 import matcapDarkPink from "../../assets/matcap_dark_pink.png";
 
-// import catGLTF from "../../assets/cat.gltf";
+import catGLTF from "../../assets/cat.gltf";
 import {
   useTexture,
   useGLTF,
