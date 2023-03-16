@@ -19,7 +19,6 @@ To begin with I will be creating some bare bones of a few components using just 
 
 Plastic Matcap - https://market.pmnd.rs/material/plastic
 Dark Pink Shiny Matcap - https://github.com/nidorx/matcaps/blob/master/PAGE-12.md#624541_fcd0c6_e4a19a_fcbcb4
-Cat Sitting Model - https://www.turbosquid.com/3d-models/low-polycatanimal-model-1340490
 Cat Standing Model - https://www.turbosquid.com/3d-models/cat-version-3d-model-1613622
 
 ## Known Issues
