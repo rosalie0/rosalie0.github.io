@@ -1,8 +1,8 @@
 import { useFrame } from "@react-three/fiber";
 import React, { useRef } from "react";
 import { Mesh } from "three";
-// import matcapJPG from "../../assets/matcap_plastic_yellow.jpg";
-import { useGLTF, useTexture } from "@react-three/drei";
+import matcapJPG from "../../assets/matcap_plastic_yellow.jpg";
+import { useTexture } from "@react-three/drei";
 
 function PlasticCube() {
   // Declare refs for animation here
@@ -16,13 +16,18 @@ function PlasticCube() {
   });
 
   // Create matcap material
-  // const matcap = useTexture(matcapJPG);
+  //src / assets / matcap_plastic_yellow.jpg;
+  const matcap = useTexture(matcapJPG);
+  const matcapURL = useTexture("./src/assets/matcap_plastic_yellow.jpg");
+  console.log(matcap, matcapURL);
+
   return (
-    <mesh ref={boxRef} attach="material">
-      <boxGeometry args={[5, 5, 5]} />
-      <meshStandardMaterial color="pink" />
-      {/* <meshMatcapMaterial matcap={matcap} /> */}
-    </mesh>
+    <>
+      <mesh castShadow receiveShadow ref={boxRef}>
+        <boxGeometry args={[6, 6, 2]} />
+        <meshMatcapMaterial matcap={matcap} />
+      </mesh>
+    </>
   );
 }
 export default PlasticCube;

@@ -14,8 +14,8 @@ function Cube() {
   });
 
   return (
-    <mesh ref={boxRef}>
-      <boxGeometry args={[5, 5, 5]} />
+    <mesh position={[3, 3, 3]} ref={boxRef}>
+      <boxGeometry args={[2, 2, 2]} />
       <meshStandardMaterial color="pink" />
     </mesh>
   );
