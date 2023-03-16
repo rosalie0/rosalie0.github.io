@@ -13,7 +13,7 @@ interface ThemeProps {
 function Header({ theme, setTheme }: ThemeProps) {
   // on small screens, flex direction should be column and align items center
   return (
-    <div className="flex flex-col md:flex-row items-center flex-wrap justify-between align-middle pb-1 border-solid border-b-2 border-rose-200">
+    <div className="flex flex-col md:flex-row items-center flex-wrap justify-between align-middle pb-1 mb-2 border-solid border-b-2 border-rose-200 dark:border-amber-900">
       <div className="flex">
         <LogoAndName />
         <Navbar />
