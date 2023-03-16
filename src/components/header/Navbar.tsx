@@ -7,7 +7,6 @@ function Navbar() {
     justifyContent: "space-between",
     alignItems: "center",
     gap: "1rem",
-    backgroundColor: "yellow",
     paddingLeft: "1rem",
     paddingRight: "1rem",
   };
