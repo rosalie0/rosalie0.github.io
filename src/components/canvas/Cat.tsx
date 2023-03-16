@@ -3,8 +3,9 @@ import matcapYellow from "../../assets/matcap_plastic_yellow.jpg";
 import matcapMint from "../../assets/matcap_plastic_mint.jpg";
 import matcapMagenta from "../../assets/matcap_plastic_magenta.jpg";
 import matcapDarkPink from "../../assets/matcap_dark_pink.png";
-
+// @ts-ignore
 import catGLTF from "../../assets/cat.gltf";
+
 import {
   useTexture,
   useGLTF,
@@ -19,7 +20,7 @@ function Cat() {
 
   // Have to use @ts-ignore because drei does not have TS types.
   // @ts-ignore
-  const { nodes } = useGLTF("./src/assets/cat.gltf");
+  const { nodes } = useGLTF(catGLTF);
 
   return (
     <Float
@@ -39,5 +40,5 @@ function Cat() {
     </Float>
   );
 }
-useGLTF.preload("./src/assets/cat.gltf");
+useGLTF.preload(catGLTF);
 export default Cat;
