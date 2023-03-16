@@ -48,9 +48,9 @@ function Navbar() {
       >
         {"<"}cv{">"}
       </NavLink>
-      <NavLink to={"/"} end className={notActiveLinkStyles}>
+      {/* <NavLink to={"/"} end className={notActiveLinkStyles}>
         return;
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 }
