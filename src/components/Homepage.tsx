@@ -4,7 +4,6 @@ import MyCanvas from "./canvas/MyCanvas";
 function Homepage() {
   return (
     <div>
-      homepage!
       <MyCanvas />
     </div>
   );

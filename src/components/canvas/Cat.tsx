@@ -7,7 +7,12 @@ import matcapMagenta from "../../assets/matcap_plastic_magenta.jpg";
 import matcapDarkPink from "../../assets/matcap_dark_pink.png";
 
 // import catGLTF from "../../assets/cat.gltf";
-import { useTexture, useGLTF, MeshWobbleMaterial } from "@react-three/drei";
+import {
+  useTexture,
+  useGLTF,
+  MeshWobbleMaterial,
+  Float,
+} from "@react-three/drei";
 import { degToRad } from "three/src/math/MathUtils";
 import { degreesToRadians } from "./helper";
 
@@ -17,31 +22,33 @@ function Cat() {
 
   // Rotation Animation
   useFrame(() => {
-    ref.current.rotation.y -= 0.001;
-
+    //ref.current.rotation.y -= 0.001;
     //ref.current.rotation.x -= 0.001;
     //ref.current.rotation.z += 0.0001;
   });
 
   // Create matcap material
-  const matcap = useTexture(matcapMint);
+  const matcap = useTexture(matcapYellow);
 
   // Have to use @ts-ignore because drei does not have TS types.
   // @ts-ignore
   const { nodes } = useGLTF("./src/assets/cat.gltf");
 
   return (
-    <mesh
-      geometry={nodes.ORIGAMI_Chat.geometry}
-      scale={0.25}
-      castShadow
-      ref={ref}
-      rotation={[0, degreesToRadians(60), 0]}
-    >
-      <meshLambertMaterial />
-      {/* <meshMatcapMaterial matcap={matcap} /> */}
-      {/* <MeshWobbleMaterial color={"yellow"} factor={0.05} speed={2} /> */}
-    </mesh>
+    <Float>
+      <mesh
+        geometry={nodes.ORIGAMI_Chat.geometry}
+        scale={0.1}
+        castShadow
+        ref={ref}
+        position={[0, 2.5, 0]}
+        rotation={[0, degToRad(30), 0]}
+      >
+        {/* <meshLambertMaterial /> */}
+        <meshMatcapMaterial matcap={matcap} />
+        {/* <MeshWobbleMaterial color={"yellow"} factor={0.05} speed={2} /> */}
+      </mesh>
+    </Float>
   );
 }
 useGLTF.preload("./src/assets/cat.gltf");

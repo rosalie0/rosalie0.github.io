@@ -25,7 +25,7 @@ function CatSitting() {
 
   // Have to use @ts-ignore because drei does not have TS types.
   // @ts-ignore
-  const nodes = useGLTF("./src/assets/scene.gltf");
+  const nodes = useGLTF("./src/assets/cat-sitting.gltf");
   console.log(nodes);
   return (
     <mesh

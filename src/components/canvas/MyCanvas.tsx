@@ -1,4 +1,10 @@
-import { Backdrop, OrbitControls } from "@react-three/drei";
+import {
+  Backdrop,
+  Environment,
+  OrbitControls,
+  PresentationControls,
+  Stage,
+} from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import React, { Suspense, useRef } from "react";
 import Cat from "./Cat";
@@ -9,27 +15,26 @@ import PlasticCube from "./PlasticCube";
 
 function MyCanvas() {
   return (
-    <div style={{ height: "900px", width: "900px", backgroundColor: "pink" }}>
-      <Canvas camera={{ position: [15, 5, 0], fov: 75 }}>
-        <OrbitControls />
+    <div style={{ height: "95vh", width: "100%", backgroundColor: "pink" }}>
+      <Canvas camera={{ position: [10, -1, 0], fov: 75 }}>
         <Suspense fallback={null}>
+          <Stage adjustCamera={true} shadows={{ type: "contact", offset: 1 }}>
+            <PresentationControls>
+              <Cat />
+            </PresentationControls>
+          </Stage>
+
           <Backdrop
             receiveShadow
-            roughness={10}
-            scale={[50, 20, 30]}
-            position={[0, -2, 0]}
+            castShadow
+            floor={5}
             rotation={[0, degreesToRadians(90), 0]}
-            floor={0.25}
-            segments={20}
+            position={[-3, -8, -10]}
+            scale={[60, 25, 4]}
           >
-            <meshStandardMaterial color="#353540" />
+            <meshStandardMaterial color="#F472B6" />
           </Backdrop>
-          {/* <Cube /> */}
-          <PlasticCube />
-
-          <Cat />
-          {/* <ambientLight intensity={0.25} /> */}
-          <pointLight intensity={2} position={[5, 7, 10]} />
+          <pointLight color={"red"} intensity={2} position={[3, 3, 3]} />
         </Suspense>
       </Canvas>
     </div>
