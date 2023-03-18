@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div
-      className="App bg-rose-50 dark:bg-slate-900"
+      className="App bg-rose-50 dark:bg-stone-900"
       style={{ minHeight: "100vh" }}
     >
       <Header theme={theme} setTheme={setTheme} />

@@ -7,13 +7,14 @@ function Navbar() {
     justifyContent: "space-between",
     alignItems: "center",
     gap: "1rem",
-    backgroundColor: "yellow",
     paddingLeft: "1rem",
     paddingRight: "1rem",
   };
 
-  const activeLinkStyles = "font-frag text-violet-500 cursor-default";
-  const notActiveLinkStyles = "font-frag text-sky-500 hover:text-sky-300";
+  const activeLinkStyles =
+    "font-frag dark:text-amber-200 text-amber-600 cursor-default";
+  const notActiveLinkStyles =
+    "font-frag text-emerald-600 hover:text-emerald-700 dark:text-emerald-200 dark:hover:text-emerald-100";
 
   return (
     <div className="navbar" style={navbarStyle}>
@@ -49,9 +50,9 @@ function Navbar() {
       >
         {"<"}cv{">"}
       </NavLink>
-      <NavLink to={"/"} end className={notActiveLinkStyles}>
+      {/* <NavLink to={"/"} end className={notActiveLinkStyles}>
         return;
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 }

@@ -12,14 +12,10 @@ const DarkModeButton = ({ theme, setTheme }: ThemeProps) => {
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
-
-  const btn =
-    "bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-2 rounded";
-  const btnDark = " dark:bg-amber-200 dark:hover:bg-amber-300 dark:text-black";
   return (
     <div className="pr-4">
       <button
-        className={btn + btnDark}
+        className="text-emerald-600 dark:text-emerald-200 font-bold text-xl py-2 px-2"
         //className="bg-amber-600 hover:bg-amber-700 text-white dark:bg-amber-200 dark:hover:bg-amber-300 dark:text-black font-bold py-2 px-4 rounded"
         onClick={handleThemeSwitch}
       >

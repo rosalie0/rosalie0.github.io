@@ -10,10 +10,11 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        noto: ["Noto Sans Japanese", "sans"],
+        noto: ["Noto Sans Japanese", "serif"],
         frag: ["Fragment Mono", "monospace"],
         source: ["Source Sans Pro", "sans-serif"],
         neon: ["Tilt Neon", "sans-serif"],
+        comfortaa: ["Comfortaa", "serif"],
       },
       //   colors: {
       //     "green-light": "#A7F3D0", //emerald-300
