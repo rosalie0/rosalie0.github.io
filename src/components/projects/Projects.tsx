@@ -35,10 +35,7 @@ function Projects() {
                   {project.description}
                 </p>
 
-                <div
-                  className="project-button-container mt-1 flex flex-wrap gap-4 justify-center
-                "
-                >
+                <div className="mt-1 flex flex-wrap gap-4 justify-center">
                   <a href={project.deployLink}>
                     <button className="rounded-md p-1 text-rose-50 bg-amber-600 hover:bg-amber-700 flex items-center gap-1">
                       Deploy <FiArrowRight />
