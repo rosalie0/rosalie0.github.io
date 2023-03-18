@@ -4,6 +4,7 @@ import { HiOutlineCode } from "react-icons/hi";
 import { FiArrowRight } from "react-icons/fi";
 
 import { projects } from "./projectData";
+import MoreProjectsComingSoon from "./MoreProjectsComingSoon";
 function Projects() {
   console.log(projects);
   return (
@@ -53,6 +54,7 @@ function Projects() {
               </div>
             </div>
           ))}
+          <MoreProjectsComingSoon />
         </div>
       </div>
     </section>
