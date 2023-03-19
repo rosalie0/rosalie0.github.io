@@ -1,6 +1,7 @@
 import React from "react";
 import { HiOutlineCode } from "react-icons/hi";
 import { projects } from "./projectData";
+import MoreProjectsComingSoon from "./MoreProjectsComingSoon";
 import SingleProject from "./SingleProject";
 
 function Projects() {
@@ -19,6 +20,7 @@ function Projects() {
             // for 'odd' projects, reverse the flex direction
             <SingleProject key={project.title} project={project} />
           ))}
+          <MoreProjectsComingSoon />
         </div>
       </div>
     </section>

@@ -23,8 +23,8 @@ const CV = () => {
         <Page pageNumber={pageNumber} />
       </Document>
 
-      <div>
-        <h5 className="font-noto italic">
+      <div className="m-1">
+        <h5 className="font-noto italic text-emerald-600 dark:text-emerald-50 ">
           Page {pageNumber} of {numPages}
         </h5>
       </div>
