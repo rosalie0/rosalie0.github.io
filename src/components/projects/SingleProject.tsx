@@ -11,6 +11,7 @@ const SingleProject = ({ project }: { project: Project }) => {
         src={project.image}
         alt="Screenshot previewing the web app"
       />
+
       <div className="p-2 md:p-2 project-info">
         <h4 className="font-frag text-2xl">{project.title}</h4>
         <h5 className="font-frag">{project.subtitle}</h5>
@@ -18,10 +19,7 @@ const SingleProject = ({ project }: { project: Project }) => {
           {project.description}
         </p>
 
-        <div
-          className="project-button-container mt-1 flex  gap-4 justify-center
-    "
-        >
+        <div className="mt-1 flex gap-4 justify-center">
           <a href={project.deployLink}>
             <button className="rounded-md p-1 text-rose-50 bg-amber-600 hover:bg-amber-700 flex items-center gap-1">
               Deploy <FiArrowRight />
