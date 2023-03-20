@@ -66,3 +66,4 @@ const stackathon = new Project(
 const projects = [capstone, graceShopper, stackathon];
 
 export { projects };
+export type { Project };
