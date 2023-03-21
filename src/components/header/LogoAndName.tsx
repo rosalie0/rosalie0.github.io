@@ -9,7 +9,7 @@ interface Props {
 
 const LogoAndName = ({ theme }: Props) => {
   return (
-    <NavLink to={"/"} end>
+    <a href="#homepage">
       <div className="flex gap-2 items-center pl-4">
         <img
           src={theme === "dark" ? light200GreenCatIcon : greenCatIcon}
@@ -19,7 +19,7 @@ const LogoAndName = ({ theme }: Props) => {
           rosalie newman
         </h1>
       </div>
-    </NavLink>
+    </a>
   );
 };
 
