@@ -1,7 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-function Navbar() {
+// ES6 Imports
+import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
+interface Props {
+  offsetHeight: number;
+}
+const Navbar = ({ offsetHeight }: Props) => {
   const navbarStyle = {
     display: "flex",
     justifyContent: "space-between",
@@ -22,15 +27,15 @@ function Navbar() {
         {"<"}about{">"}
       </a>
 
-      <a href="#projects">
+      <Link to="projects" smooth={true} offset={offsetHeight}>
         {"<"}projects{">"}
-      </a>
+      </Link>
 
-      <a href="#contact">
+      <Link to="contact" smooth={true}>
         {"<"}contact{">"}
-      </a>
+      </Link>
     </div>
   );
-}
+};
 
 export default Navbar;
