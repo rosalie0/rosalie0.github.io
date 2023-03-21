@@ -20,9 +20,9 @@ function App() {
   return (
     <div className="bg-rose-50 dark:bg-stone-900">
       <Header theme={theme} setTheme={setTheme} />
-      <Homepage />
       <About />
       <Projects />
+      <Homepage />
       <Contact />
     </div>
   );

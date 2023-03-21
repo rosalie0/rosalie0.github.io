@@ -19,7 +19,7 @@ const Navbar = ({ offsetHeight }: Props) => {
   const activeLinkStyles =
     "font-frag dark:text-amber-200 text-amber-600 cursor-default";
   const notActiveLinkStyles =
-    "font-frag text-emerald-900 hover:text-emerald-700 dark:text-emerald-200 dark:hover:text-emerald-100 cursor-pointer";
+    "font-frag text-emerald-900 dark:text-emerald-200 cursor-pointer";
 
   const [aboutIsActive, setAboutIsActive] = useState(false);
   const [projectsIsActive, setProjectsIsActive] = useState(false);
@@ -29,6 +29,7 @@ const Navbar = ({ offsetHeight }: Props) => {
     <div className={notActiveLinkStyles} style={navbarStyle}>
       <Link
         to="about"
+        className="hover:text-amber-600 dark:hover:text-amber-200 "
         activeClass={activeLinkStyles}
         // className={aboutIsActive ? activeLinkStyles : notActiveLinkStyles}
         // onClick={() => {
@@ -48,6 +49,7 @@ const Navbar = ({ offsetHeight }: Props) => {
 
       <Link
         to="projects"
+        className="hover:text-amber-600 dark:hover:text-amber-200 "
         activeClass={activeLinkStyles}
         // className={projectsIsActive ? activeLinkStyles : notActiveLinkStyles}
         // onClick={() => {
@@ -67,6 +69,7 @@ const Navbar = ({ offsetHeight }: Props) => {
 
       <Link
         to="contact"
+        className="hover:text-amber-600 dark:hover:text-amber-200 "
         activeClass={activeLinkStyles}
         // className={contactIsActive ? activeLinkStyles : notActiveLinkStyles}
         // onClick={() => {
