@@ -5,7 +5,7 @@ import CanvasContainer from "./canvas/CanvasContainer";
 function Homepage() {
   return (
     <section id="homepage">
-      <CanvasContainer />;
+      <CanvasContainer />
     </section>
   );
 }
