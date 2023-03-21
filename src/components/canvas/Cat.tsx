@@ -14,12 +14,13 @@ import catGltfUrl from "../../assets/cat.gltf?url";
 
 function Cat() {
   // Create matcap material
-  const matcap = useTexture(matcapYellow);
+  //const matcap = useTexture(matcapYellow);
 
   // Have to use @ts-ignore because drei does not have TS types.
   // @ts-ignore
-  //const { nodes } = useGLTF("/cat.gltf");
   const { nodes } = useGLTF(catGltfUrl);
+  // Can also do the line below if you put the file in the public folder.
+  //const { nodes } = useGLTF("/cat.gltf");
 
   return (
     <Float
@@ -39,7 +40,9 @@ function Cat() {
     </Float>
   );
 }
-// useGLTF.preload("/cat.gltf");
+
 useGLTF.preload(catGltfUrl);
+// Again, would use this line if you had file in public folder instead.
+// useGLTF.preload("/cat.gltf");
 
 export default Cat;

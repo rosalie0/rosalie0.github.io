@@ -1,6 +1,5 @@
 import React from "react";
 import { Backdrop } from "@react-three/drei";
-
 import { degToRad } from "three/src/math/MathUtils";
 
 const PinkBackdrop = () => {
