@@ -24,8 +24,6 @@ function Header({ theme, setTheme }: ThemeProps) {
     }
   }, [isLessThanMediumScreenSize]);
 
-  console.log(offsetHeight);
-
   // on small screens, flex direction should be column and align items center
   return (
     <div
