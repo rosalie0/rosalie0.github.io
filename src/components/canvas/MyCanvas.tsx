@@ -1,8 +1,8 @@
-import { Backdrop, PresentationControls, Stage } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
 import React, { Suspense } from "react";
-import Cat from "./Cat";
+import { PresentationControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 import PinkBackdrop from "./PinkBackdrop";
+import StageForCat from "./StageForCat";
 
 function MyCanvas() {
   return (
@@ -12,14 +12,7 @@ function MyCanvas() {
         camera={{ position: [7.5, -1, 0], fov: 75 }}
       >
         <Suspense fallback={null}>
-          <Stage
-            // environment={"studio"}
-            adjustCamera={true}
-            shadows={{ type: "contact", offset: 1 }}
-          >
-            <Cat />
-          </Stage>
-
+          <StageForCat />
           {/* <PinkBackdrop /> */}
           <pointLight color={"red"} intensity={2} position={[3, 3, 3]} />
         </Suspense>
