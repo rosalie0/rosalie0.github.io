@@ -15,7 +15,7 @@ const DarkModeButton = ({ theme, setTheme }: ThemeProps) => {
   return (
     <div className="md:pr-4">
       <button
-        className="text-emerald-600 dark:text-emerald-200 font-bold text-xl py-2 px-2"
+        className="text-emerald-900 dark:text-emerald-200 font-bold text-xl py-2 px-2"
         //className="bg-amber-600 hover:bg-amber-700 text-white dark:bg-amber-200 dark:hover:bg-amber-300 dark:text-black font-bold py-2 px-4 rounded"
         onClick={handleThemeSwitch}
       >

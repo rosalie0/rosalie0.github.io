@@ -14,7 +14,7 @@ function Navbar() {
   const activeLinkStyles =
     "font-frag dark:text-amber-200 text-amber-600 cursor-default";
   const notActiveLinkStyles =
-    "font-frag text-emerald-600 hover:text-emerald-700 dark:text-emerald-200 dark:hover:text-emerald-100";
+    "font-frag text-emerald-900 hover:text-emerald-700 dark:text-emerald-200 dark:hover:text-emerald-100";
 
   return (
     <div className="navbar" style={navbarStyle}>
