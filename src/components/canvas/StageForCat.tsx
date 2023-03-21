@@ -10,11 +10,12 @@ const StageForCat = () => {
       // environment={{ files: studio }}
       //environment={{ files: "/studio_small_03_1k_LOWRES.png" }}
       //environment={undefined}
-      environment={undefined}
+      //@ts-ignore
+      environment={null}
       adjustCamera={true}
       // shadows={{ type: "contact", offset: 1 }}
     >
-      {/* <Cat /> */}
+      <Cat />
     </Stage>
   );
 };
