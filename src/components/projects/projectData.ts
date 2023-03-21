@@ -2,6 +2,11 @@ import codenamesImage from "../../assets/projects/codenames-preview700.png";
 import graceShopperImage from "../../assets/projects/grace-shopper-preview700.png";
 import bugHuntImage from "../../assets/projects/bug-hunt-preview700.png";
 
+// low res
+import codenamesImageTiny from "../../assets/projects/tiny/codenames-2.png";
+import graceShopperImageTiny from "../../assets/projects/tiny/grace-shopper-preview700.png";
+import bugHuntImageTiny from "../../assets/projects/tiny/bug-hunt-preview700.png";
+
 class Project {
   deployLink: string;
   githubLink: string;
@@ -36,7 +41,7 @@ const capstone = new Project(
     Features synchronized gameplay across all players' screens, responsive design, and user chat box for a seamless user experience. 
     Created by a team of five members, over the course of 6 weeks.
 `,
-  codenamesImage
+  codenamesImageTiny
 );
 
 const graceShopper = new Project(
@@ -48,7 +53,7 @@ const graceShopper = new Project(
     Features include a from-scratch backend schema, account creation & authentication, persistent user cart, Stripe API checkout, and admin view that lets website owners add and delete products and orders from the webpage.
   Backend schemas designed and written from scratch, with Express API routes protected with JWT authentication.
 `,
-  graceShopperImage
+  graceShopperImageTiny
 );
 
 const stackathon = new Project(
@@ -60,7 +65,7 @@ const stackathon = new Project(
     React Three Fiber and Three.js were used to display ported 3D blender models, create 3D text, and change 2D photographs into skyboxes. 
     Redux managed state and Firebase Cloud Firestore was used for the leaderboard backend.
 `,
-  bugHuntImage
+  bugHuntImageTiny
 );
 
 const projects = [capstone, graceShopper, stackathon];

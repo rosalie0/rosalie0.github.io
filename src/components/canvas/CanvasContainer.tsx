@@ -3,19 +3,8 @@ import SocialsContainerForCanvas from "../socials/SocialsContainerForCanvas";
 import MyCanvas from "./MyCanvas";
 
 const CanvasContainer = () => {
-  const blackSquare = {
-    position: "absolute",
-    right: 0,
-    bottom: 0,
-    height: "200px",
-    width: "200px",
-    backgroundColor: "black",
-    zIndex: "1",
-  };
   return (
     <div style={{ position: "relative" }}>
-      {/* <div style={blackSquare}></div> */}
-
       {/* <SocialsContainerForCanvas /> */}
       <MyCanvas />
     </div>
