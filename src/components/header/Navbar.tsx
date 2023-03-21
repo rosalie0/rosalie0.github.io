@@ -26,17 +26,18 @@ const Navbar = ({ offsetHeight }: Props) => {
   const [contactIsActive, setContactIsActive] = useState(false);
 
   return (
-    <div className="navbar " style={navbarStyle}>
+    <div className={notActiveLinkStyles} style={navbarStyle}>
       <Link
         to="about"
-        className={aboutIsActive ? activeLinkStyles : notActiveLinkStyles}
-        onClick={() => {
-          setContactIsActive(false);
-          setAboutIsActive(true);
-          setProjectsIsActive(false);
-        }}
-        onSetActive={() => setAboutIsActive(true)}
-        onSetInactive={() => setAboutIsActive(false)}
+        activeClass={activeLinkStyles}
+        // className={aboutIsActive ? activeLinkStyles : notActiveLinkStyles}
+        // onClick={() => {
+        //   setContactIsActive(false);
+        //   setAboutIsActive(true);
+        //   setProjectsIsActive(false);
+        // }}
+        // onSetActive={() => setAboutIsActive(true)}
+        // onSetInactive={() => setAboutIsActive(false)}
         smooth={true}
         offset={offsetHeight}
         isDynamic={true}
@@ -47,14 +48,15 @@ const Navbar = ({ offsetHeight }: Props) => {
 
       <Link
         to="projects"
-        className={projectsIsActive ? activeLinkStyles : notActiveLinkStyles}
-        onClick={() => {
-          setContactIsActive(false);
-          setAboutIsActive(false);
-          setProjectsIsActive(true);
-        }}
-        onSetActive={() => setProjectsIsActive(true)}
-        onSetInactive={() => setProjectsIsActive(false)}
+        activeClass={activeLinkStyles}
+        // className={projectsIsActive ? activeLinkStyles : notActiveLinkStyles}
+        // onClick={() => {
+        //   setContactIsActive(false);
+        //   setAboutIsActive(false);
+        //   setProjectsIsActive(true);
+        // }}
+        // onSetActive={() => setProjectsIsActive(true)}
+        // onSetInactive={() => setProjectsIsActive(false)}
         smooth={true}
         offset={offsetHeight}
         isDynamic={true}
@@ -65,14 +67,15 @@ const Navbar = ({ offsetHeight }: Props) => {
 
       <Link
         to="contact"
-        className={contactIsActive ? activeLinkStyles : notActiveLinkStyles}
-        onClick={() => {
-          setContactIsActive(true);
-          setAboutIsActive(false);
-          setProjectsIsActive(false);
-        }}
-        onSetActive={() => setContactIsActive(true)}
-        onSetInactive={() => setContactIsActive(false)}
+        activeClass={activeLinkStyles}
+        // className={contactIsActive ? activeLinkStyles : notActiveLinkStyles}
+        // onClick={() => {
+        //   setContactIsActive(true);
+        //   setAboutIsActive(false);
+        //   setProjectsIsActive(false);
+        // }}
+        // onSetActive={() => setContactIsActive(true)}
+        // onSetInactive={() => setContactIsActive(false)}
         smooth={true}
         offset={offsetHeight}
         isDynamic={true}
