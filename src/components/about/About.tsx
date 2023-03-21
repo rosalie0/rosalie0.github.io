@@ -2,7 +2,11 @@ import React from "react";
 import ComingSoon from "../utils/ComingSoon";
 
 function About() {
-  return <ComingSoon />;
+  return (
+    <section id="about">
+      <ComingSoon />;
+    </section>
+  );
 
   // return (
   //   <div>

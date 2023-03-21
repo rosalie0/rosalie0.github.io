@@ -5,8 +5,8 @@ import RouteContainer from "./components/RouteContainer";
 import Header from "./components/header/Header";
 import Homepage from "./components/Homepage";
 import Projects from "./components/projects/Projects";
-import SocialsContainer from "./components/socials/SocialsContainer";
 import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
 
 function App() {
   // Piece of state for dark/light mode
@@ -23,7 +23,7 @@ function App() {
       <Homepage />
       <About />
       <Projects />
-      <SocialsContainer />
+      <Contact />
     </div>
   );
 }
