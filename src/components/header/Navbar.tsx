@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from "react";
 // ES6 Imports
 import { Link } from "react-scroll";
-import scrollListen from "../utils/scrollListen";
 
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 interface Props {
   offsetHeight: number;
 }
 const Navbar = ({ offsetHeight }: Props) => {
+  // A piece of state that uses an eventListener to see if we are at scrollY of 0
+  const [userAtTop, setUserAtTop] = useState(true);
+  useScrollPosition(({ prevPos, currPos }) => {
+    currPos.y === 0 ? setUserAtTop(true) : setUserAtTop(false);
+    console.log(currPos.y);
+  });
+
   const navbarStyle = {
     display: "flex",
     justifyContent: "space-between",
@@ -19,16 +26,14 @@ const Navbar = ({ offsetHeight }: Props) => {
     "font-frag dark:text-amber-200 text-amber-600 cursor-default";
   const notActiveLinkStyles =
     "font-frag text-emerald-900 dark:text-emerald-200 cursor-pointer";
+  const hoverStyles = "hover:text-amber-600 dark:hover:text-amber-200";
 
   const [aboutIsActive, setAboutIsActive] = useState(false);
   const [projectsIsActive, setProjectsIsActive] = useState(false);
   const [contactIsActive, setContactIsActive] = useState(false);
 
-  const hoverStyles = "hover:text-amber-600 dark:hover:text-amber-200";
+  console.log("rerender");
 
-  // Get user scroll position via custom hook
-  const scrollPosition = scrollListen();
-  const userAtTop = scrollPosition === 0;
   return (
     <div className={notActiveLinkStyles} style={navbarStyle}>
       <Link
