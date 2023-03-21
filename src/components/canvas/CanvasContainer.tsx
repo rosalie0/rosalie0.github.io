@@ -1,5 +1,5 @@
 import React from "react";
-import SocialsContainer from "../socials/SocialsContainer";
+import SocialsContainerForCanvas from "../socials/SocialsContainerForCanvas";
 import MyCanvas from "./MyCanvas";
 
 const CanvasContainer = () => {
@@ -16,7 +16,7 @@ const CanvasContainer = () => {
     <div style={{ position: "relative" }}>
       {/* <div style={blackSquare}></div> */}
 
-      <SocialsContainer />
+      {/* <SocialsContainerForCanvas /> */}
       <MyCanvas />
     </div>
   );
