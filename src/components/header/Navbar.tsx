@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 // ES6 Imports
 import * as Scroll from "react-scroll";
@@ -19,19 +19,65 @@ const Navbar = ({ offsetHeight }: Props) => {
   const activeLinkStyles =
     "font-frag dark:text-amber-200 text-amber-600 cursor-default";
   const notActiveLinkStyles =
-    "font-frag text-emerald-900 hover:text-emerald-700 dark:text-emerald-200 dark:hover:text-emerald-100";
+    "font-frag text-emerald-900 hover:text-emerald-700 dark:text-emerald-200 dark:hover:text-emerald-100 cursor-pointer";
+
+  const [aboutIsActive, setAboutIsActive] = useState(false);
+  const [projectsIsActive, setProjectsIsActive] = useState(false);
+  const [contactIsActive, setContactIsActive] = useState(false);
 
   return (
-    <div className="navbar font-frag" style={navbarStyle}>
-      <a href="#about">
+    <div className="navbar " style={navbarStyle}>
+      <Link
+        to="about"
+        className={aboutIsActive ? activeLinkStyles : notActiveLinkStyles}
+        onClick={() => {
+          setContactIsActive(false);
+          setAboutIsActive(true);
+          setProjectsIsActive(false);
+        }}
+        onSetActive={() => setAboutIsActive(true)}
+        onSetInactive={() => setAboutIsActive(false)}
+        smooth={true}
+        offset={offsetHeight}
+        isDynamic={true}
+        spy={true}
+      >
         {"<"}about{">"}
-      </a>
+      </Link>
 
-      <Link to="projects" smooth={true} offset={offsetHeight}>
+      <Link
+        to="projects"
+        className={projectsIsActive ? activeLinkStyles : notActiveLinkStyles}
+        onClick={() => {
+          setContactIsActive(false);
+          setAboutIsActive(false);
+          setProjectsIsActive(true);
+        }}
+        onSetActive={() => setProjectsIsActive(true)}
+        onSetInactive={() => setProjectsIsActive(false)}
+        smooth={true}
+        offset={offsetHeight}
+        isDynamic={true}
+        spy={true}
+      >
         {"<"}projects{">"}
       </Link>
 
-      <Link to="contact" smooth={true}>
+      <Link
+        to="contact"
+        className={contactIsActive ? activeLinkStyles : notActiveLinkStyles}
+        onClick={() => {
+          setContactIsActive(true);
+          setAboutIsActive(false);
+          setProjectsIsActive(false);
+        }}
+        onSetActive={() => setContactIsActive(true)}
+        onSetInactive={() => setContactIsActive(false)}
+        smooth={true}
+        offset={offsetHeight}
+        isDynamic={true}
+        spy={true}
+      >
         {"<"}contact{">"}
       </Link>
     </div>

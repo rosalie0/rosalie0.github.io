@@ -1,9 +1,10 @@
 import React from "react";
+import { Element } from "react-scroll";
 import ComingSoon from "../utils/ComingSoon";
 
 function About() {
   return (
-    <section id="about">
+    <Element name="about">
       <div className="flex flex-col gap-4 p-4 items-center  md:flex-row">
         <img src="https://placekitten.com/400/400" className="rounded-full" />
         <div className="flex flex-col items-center md:items-start gap-4 p-4">
@@ -31,12 +32,8 @@ function About() {
           </div>
         </div>
       </div>
-    </section>
+    </Element>
   );
-
-  // return (
-
-  // );
 }
 
 export default About;
