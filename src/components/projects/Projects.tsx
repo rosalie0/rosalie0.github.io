@@ -9,8 +9,8 @@ function Projects() {
     <section id="projects">
       <div className="container px-5 py-10 text-center lg:px-40">
         <div className="flex flex-col items-center">
-          <HiOutlineCode className="text-3xl dark:text-emerald-50 text-emerald-600" />
-          <h2 className="text-2xl text-emerald-600 dark:text-emerald-50 font-frag font-bold">
+          <HiOutlineCode className="text-3xl dark:text-emerald-50 text-emerald-900" />
+          <h2 className="text-2xl text-emerald-900 dark:text-emerald-50 font-frag font-bold">
             Apps I've built
           </h2>
         </div>

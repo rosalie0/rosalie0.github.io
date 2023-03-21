@@ -10,7 +10,7 @@ const ComingSoon = () => {
   return (
     <div className="container">
       <div
-        className="bg-emerald-600 text-xl text-white h-36 font-frag flex items-center justify-center mt-14"
+        className="bg-emerald-900 text-xl text-white h-36 font-frag flex items-center justify-center mt-14"
         style={styles}
       >
         coming soon...

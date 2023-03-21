@@ -15,7 +15,7 @@ const LogoAndName = ({ theme }: Props) => {
           src={theme === "dark" ? light200GreenCatIcon : greenCatIcon}
           className="h-10"
         />
-        <h1 className="text-[2rem] font-comfortaa text-emerald-600 dark:text-emerald-100 font-bold">
+        <h1 className="text-[2rem] font-comfortaa text-emerald-900 dark:text-emerald-100 font-bold">
           rosalie newman
         </h1>
       </div>
