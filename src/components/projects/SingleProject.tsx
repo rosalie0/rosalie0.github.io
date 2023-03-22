@@ -1,8 +1,7 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Project } from "./projectData";
 import { FiArrowRight } from "react-icons/fi";
-import { motion, Variants } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 const SingleProject = ({
   project,
@@ -11,16 +10,15 @@ const SingleProject = ({
   project: Project;
   index: number;
 }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-  console.log(isInView);
+  const isEvenIndex = !(index % 2);
+  console.log(isEvenIndex);
   return (
     <motion.div
-      ref={ref}
-      initial={{ opacity: 0, x: -150 }}
+      initial={isEvenIndex ? { opacity: 0, x: -150 } : { opacity: 0, x: 150 }}
       whileInView={{
         opacity: 1,
         x: 0,
+        transition: { duration: 0.5 }, // animation for whileInView lasts 0.5 second
       }}
       viewport={{ once: true, amount: 0.5 }}
       className="flex flex-col md:flex-row md:p-2 gap-2 items-center md:odd:flex-row-reverse border-solid border-2 dark:border-emerald-50 border-emerald-900 rounded-lg text-rose-900 dark:text-emerald-100 dark:bg-emerald-900/50 bg-emerald-50/75 hover:bg-emerald-50 shadow-md"
