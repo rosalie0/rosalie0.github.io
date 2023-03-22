@@ -3,10 +3,11 @@ import { projects } from "./projectData";
 import MoreProjectsComingSoon from "./MoreProjectsComingSoon";
 import SingleProject from "./SingleProject";
 import IntroToProjects from "./IntroToProjects";
+import { Element } from "react-scroll";
 
 function Projects() {
   return (
-    <section id="projects">
+    <Element name="projects">
       <div className="container px-5 text-center lg:px-40">
         <IntroToProjects />
 
@@ -19,7 +20,7 @@ function Projects() {
           <MoreProjectsComingSoon />
         </div>
       </div>
-    </section>
+    </Element>
   );
 }
 

@@ -1,10 +1,13 @@
 import React from "react";
+import { Element } from "react-scroll";
 import SocialsContainer from "../socials/SocialsContainer";
 
 const Contact = () => {
   return (
     <section id="contact">
-      <SocialsContainer />
+      <Element name="contact">
+        <SocialsContainer />
+      </Element>
     </section>
   );
 };
