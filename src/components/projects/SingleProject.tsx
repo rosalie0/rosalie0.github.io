@@ -11,37 +11,18 @@ const SingleProject = ({
   project: Project;
   index: number;
 }) => {
-  // const projectAnimate = {
-  //   offscreen: { opacity: 0, x: -150 },
-  //   onscreen: { opacity: 1, x: 0, transition: { duration: 1.5 } },
-  // };
-
   const ref = useRef(null);
   const isInView = useInView(ref);
   console.log(isInView);
   return (
     <motion.div
       ref={ref}
-      // transition={{
-      //   once: true,
-      //   duration: 0.5,
-      //   delay: index * 0.3,
-      //   //delay: isInView ? index * 0.3 : 2,
-      // }}
-      // initial={{ opacity: 0, x: -150 }}
-      // // animate={{ opacity: 1, x: 0 }}
-      // whileInView={{
-      //   opacity: 1,
-      //   x: 0,
-      //   transition: {
-      //     once: true,
-      //     duration: 0.5,
-      //     //delay: index * 0.3,
-      //     //delay: isInView ? index * 0.3 : 2,
-      //   },
-      // }}
-      //viewport={{ once: true, amount: 0.1 }}
-      //variants={projectAnimate}
+      initial={{ opacity: 0, x: -150 }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+      }}
+      viewport={{ once: true, amount: 0.5 }}
       className="flex flex-col md:flex-row md:p-2 gap-2 items-center md:odd:flex-row-reverse border-solid border-2 dark:border-emerald-50 border-emerald-900 rounded-lg text-rose-900 dark:text-emerald-100 dark:bg-emerald-900/50 bg-emerald-50/75 hover:bg-emerald-50 shadow-md"
     >
       <img

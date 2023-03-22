@@ -12,17 +12,7 @@ function Projects() {
       <div className="container px-5 text-center lg:px-40">
         <IntroToProjects />
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ duration: 0.3 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0, scale: 0 },
-          }}
-          className="flex flex-col gap-4"
-        >
+        <div className="flex flex-col gap-4">
           {projects.map((project, index) => (
             // for 'odd' projects, reverse the flex direction
             <SingleProject
@@ -33,7 +23,7 @@ function Projects() {
           ))}
 
           <MoreProjectsComingSoon />
-        </motion.div>
+        </div>
       </div>
     </Element>
   );
