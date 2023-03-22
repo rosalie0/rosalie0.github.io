@@ -14,7 +14,7 @@ const SingleProject = ({
   console.log(isEvenIndex);
   return (
     <motion.div
-      initial={isEvenIndex ? { opacity: 0, x: -150 } : { opacity: 0, x: 150 }}
+      initial={isEvenIndex ? { opacity: 0, x: -50 } : { opacity: 0, x: 50 }}
       whileInView={{
         opacity: 1,
         x: 0,
