@@ -1,10 +1,23 @@
 import React from "react";
 import { Project } from "./projectData";
 import { FiArrowRight } from "react-icons/fi";
+import { motion, Variants } from "framer-motion";
 
 const SingleProject = ({ project }: { project: Project }) => {
+  const initial = { opacity: 0, x: -150 };
+  const whileInView = { opacity: 1, x: 0 };
+  // const projectAnimate = {
+  //   offscreen: { opacity: 0, x: -150 },
+  //   onscreen: { opacity: 1, x: 0, transition: { duration: 1.5 } },
+  // };
   return (
-    <div className="flex flex-col md:flex-row md:p-2 gap-2 items-center md:odd:flex-row-reverse border-solid border-2 dark:border-emerald-50 border-emerald-900 rounded-lg text-rose-900 dark:text-emerald-100 dark:bg-emerald-900/50 bg-emerald-50/75 hover:bg-emerald-50 shadow-md">
+    <motion.div
+      initial={initial}
+      whileInView={whileInView}
+      //variants={projectAnimate}
+      viewport={{ once: true, amount: 0.3 }}
+      className="flex flex-col md:flex-row md:p-2 gap-2 items-center md:odd:flex-row-reverse border-solid border-2 dark:border-emerald-50 border-emerald-900 rounded-lg text-rose-900 dark:text-emerald-100 dark:bg-emerald-900/50 bg-emerald-50/75 hover:bg-emerald-50 shadow-md"
+    >
       <img
         className="rounded-md"
         width={"500px"}
@@ -32,7 +45,7 @@ const SingleProject = ({ project }: { project: Project }) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
