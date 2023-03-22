@@ -11,7 +11,7 @@ const Navbar = ({ offsetHeight }: Props) => {
   const [userAtTop, setUserAtTop] = useState(true);
   useScrollPosition(({ prevPos, currPos }) => {
     currPos.y === 0 ? setUserAtTop(true) : setUserAtTop(false);
-    console.log(currPos.y);
+    // console.log(currPos.y);
   });
 
   const navbarStyle = {
@@ -32,7 +32,7 @@ const Navbar = ({ offsetHeight }: Props) => {
   const [projectsIsActive, setProjectsIsActive] = useState(false);
   const [contactIsActive, setContactIsActive] = useState(false);
 
-  console.log("rerender");
+  //console.log("rerender");
 
   return (
     <div className={notActiveLinkStyles} style={navbarStyle}>
