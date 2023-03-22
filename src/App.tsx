@@ -3,6 +3,10 @@ import React, { useEffect, useState } from "react";
 // Components:
 import RouteContainer from "./components/RouteContainer";
 import Header from "./components/header/Header";
+import Homepage from "./components/Homepage";
+import Projects from "./components/projects/Projects";
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
 
 function App() {
   // Piece of state for dark/light mode
@@ -14,12 +18,12 @@ function App() {
   }, [theme]);
 
   return (
-    <div
-      className="App bg-rose-50 dark:bg-stone-900"
-      style={{ minHeight: "100vh" }}
-    >
+    <div className="bg-rose-50 dark:bg-stone-900">
       <Header theme={theme} setTheme={setTheme} />
-      <RouteContainer />
+      <Homepage />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   );
 }

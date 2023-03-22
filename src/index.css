@@ -5,5 +5,7 @@
 @tailwind utilities;
 
 @layer components {
-  /* body {font-family: "Noto Sans Japanese", Verdana, Tahoma, sans-serif;} */
+  html {
+    scroll-behavior: smooth;
+  }
 }
