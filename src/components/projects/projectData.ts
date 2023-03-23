@@ -8,65 +8,56 @@ import graceShopperImageTiny from "../../assets/projects/tiny/grace-shopper-prev
 import bugHuntImageTiny from "../../assets/projects/tiny/bug-hunt-preview700.png";
 
 class Project {
-  deployLink: string;
-  githubLink: string;
-  title: string;
-  subtitle: string;
-  description: string;
-  image: string;
+  title!: string;
+  subtitle?: string;
+  description!: string;
+  image!: string;
+  deployLink?: string;
+  githubLink?: string;
+  videoLink?: string;
 
-  constructor(
-    deployLink: string,
-    githubLink: string,
-    title: string,
-    subtitle: string,
-    description: string,
-    image: string
-  ) {
-    this.deployLink = deployLink;
-    this.githubLink = githubLink;
-    this.title = title;
-    this.subtitle = subtitle;
-    this.description = description;
-    this.image = image;
+  constructor(data: Partial<Project>) {
+    Object.assign(this, data);
   }
 }
 
-const capstone = new Project(
-  "https://codenames-0nt7.onrender.com/",
-  "https://github.com/2208-Capstone-Team-2/codenames",
-  "Codenames",
-  "an online multiplayer card game",
-  ` Written in typescript with a blend of firebase & SQL for backend.
+const capstone = new Project({
+  deployLink: "https://codenames-0nt7.onrender.com/",
+  githubLink: "https://github.com/2208-Capstone-Team-2/codenames",
+  videoLink: "https://www.youtube.com/watch?v=nMLCx3XAIkE",
+  title: "Codenames",
+  subtitle: "an online multiplayer card game",
+  description: ` Written in typescript with a blend of firebase & SQL for backend.
     Features synchronized gameplay across all players' screens, responsive design, and user chat box for a seamless user experience. 
     Created by a team of five members, over the course of 6 weeks.
-`,
-  codenamesImageTiny
-);
+    `,
+  image: codenamesImageTiny,
+});
 
-const graceShopper = new Project(
-  "https://comic-overflow.onrender.com/",
-  "https://github.com/2208-GS-Team-1/Comic-Overflow",
-  "Comic Overflow",
-  "an e-commerce site",
-  `   Comic Overflow is an e-commerce platform for comic book enthusiasts built over the course of a 2.5 week period in a team of four. 
+const graceShopper = new Project({
+  deployLink: "https://comic-overflow.onrender.com/",
+  githubLink: "https://github.com/2208-GS-Team-1/Comic-Overflow",
+  videoLink: "https://www.youtube.com/watch?v=rbbKldsF4Gw",
+  title: "Comic Overflow",
+  subtitle: "an e-commerce site",
+  description: `   Comic Overflow is an e-commerce platform for comic book enthusiasts built over the course of a 2.5 week period in a team of four.
     Features include a from-scratch backend schema, account creation & authentication, persistent user cart, Stripe API checkout, and admin view that lets website owners add and delete products and orders from the webpage.
-  Backend schemas designed and written from scratch, with Express API routes protected with JWT authentication.
-`,
-  graceShopperImageTiny
-);
+    Backend schemas designed and written from scratch, with Express API routes protected with JWT authentication.
+    `,
+  image: graceShopperImageTiny,
+});
 
-const stackathon = new Project(
-  "https://bug-hunt.onrender.com/",
-  "https://github.com/rosalie0/Bug-Hunt",
-  "Bug Hunt",
-  "a singleplayer 3D web game",
-  `    A solo foray into 3-D rendering on the web, this game has players collect points by clicking randomly generated insect models, with a timer feature and leaderboard where they can submit their score.
-    React Three Fiber and Three.js were used to display ported 3D blender models, create 3D text, and change 2D photographs into skyboxes. 
+const stackathon = new Project({
+  deployLink: "https://bug-hunt.onrender.com/",
+  githubLink: "https://github.com/rosalie0/Bug-Hunt",
+  title: "Bug Hunt",
+  subtitle: "a singleplayer 3D web game",
+  description: `    A solo foray into 3-D rendering on the web, this game has players collect points by clicking randomly generated insect models, with a timer feature and leaderboard where they can submit their score.
+    React Three Fiber and Three.js were used to display ported 3D blender models, create 3D text, and change 2D photographs into skyboxes.
     Redux managed state and Firebase Cloud Firestore was used for the leaderboard backend.
-`,
-  bugHuntImageTiny
-);
+    `,
+  image: bugHuntImageTiny,
+});
 
 const projects = [capstone, graceShopper, stackathon];
 
