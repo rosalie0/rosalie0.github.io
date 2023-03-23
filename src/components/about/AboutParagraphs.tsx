@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutParagraphs = () => {
   return (
-    <div className="text-lg leading-relaxed text-rose-900 font-source">
+    <div className="text-lg px-4 text-center md:text-left md:px-0 leading-relaxed text-rose-900 font-source">
       <p>But you can also call me Rose 🌸</p>
       <p>My pronouns are she/her.</p>
       <p>
