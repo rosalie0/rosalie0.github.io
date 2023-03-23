@@ -25,7 +25,9 @@ Using the chrome devtool's Network tab, I was able to discover unneccesary netwo
 
 ### Accessbility
 
-When I started the site I made a color palette that looked good to me - but soon discovered it had poor contrast rating. I adjusted based on this, as well as for colorblindness using the Lighthouse chrome devtools. Other pieces of the puzzle I learnt about was the need to label certain non-text elements for screen-reader usage, such as the dark/light mode button.
+When I started the site I made a color palette that looked good to me - but soon discovered it had poor contrast rating. I adjusted based on this, as well as for colorblindness using the Lighthouse chrome devtools.
+
+Other pieces of the puzzle I learnt about was the need to label certain non-text elements for screen-reader usage, such as the dark/light mode button, and the differences between `aria-label` and `aria-labelledby`.
 
 ## Getting Started
 
