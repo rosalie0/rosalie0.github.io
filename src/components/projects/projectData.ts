@@ -3,10 +3,9 @@ import graceShopperImage from "../../assets/projects/grace-shopper-preview700.pn
 import bugHuntImage from "../../assets/projects/bug-hunt-preview700.png";
 
 // low res
-import codenamesImageTiny from "../../assets/projects/tiny/codenames-2.png";
-import graceShopperImageTiny from "../../assets/projects/tiny/grace-shopper-preview700.png";
-import bugHuntImageTiny from "../../assets/projects/tiny/bug-hunt-preview700.png";
-
+import codenamesImageTiny from "../../assets/projects/webp/codenames-preview700.webp";
+import graceShopperImageTiny from "../../assets/projects/webp/grace-shopper-preview700.webp";
+import bugHuntImageTiny from "../../assets/projects/webp/bug-hunt-preview700.webp";
 class Project {
   title!: string;
   subtitle?: string;
