@@ -1,10 +1,8 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { Element } from "react-scroll";
-import ComingSoon from "../utils/ComingSoon";
 import AboutHeading from "./AboutHeading";
 import AboutParagraphs from "./AboutParagraphs";
 import portrait from "../../assets/portrait-square-95.webp";
-import { Skeleton } from "@mui/material";
 
 function About() {
   return (
