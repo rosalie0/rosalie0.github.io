@@ -13,8 +13,8 @@ const SingleProject = ({ project }: { project: Project }) => {
       />
 
       <div className="p-2 md:p-2 project-info">
-        <h4 className="font-frag text-2xl">{project.title}</h4>
-        <h5 className="font-frag">{project.subtitle}</h5>
+        <h3 className="font-frag text-2xl">{project.title}</h3>
+        <h4 className="font-frag">{project.subtitle}</h4>
         <p className="whitespace-pre-wrap font-source text-md leading-snug text-left">
           {project.description}
         </p>

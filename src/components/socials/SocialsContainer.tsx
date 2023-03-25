@@ -4,9 +4,9 @@ import SocialIcons from "./SocialIcons";
 const SocialsContainer = () => {
   return (
     <div className="mb-4 mr-4">
-      <h5 className="font-neon text-lg  text-emerald-900 dark:text-emerald-100">
+      <h2 className="font-neon text-lg  text-emerald-900 dark:text-emerald-100">
         let's connect!
-      </h5>
+      </h2>
       <SocialIcons />
     </div>
   );

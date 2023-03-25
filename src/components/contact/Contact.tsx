@@ -1,14 +1,14 @@
 import React from "react";
 import { Element } from "react-scroll";
+import CanvasContainer from "../canvas/CanvasContainer";
 import SocialsContainer from "../socials/SocialsContainer";
 
 const Contact = () => {
   return (
-    <section id="contact">
-      <Element name="contact">
-        <SocialsContainer />
-      </Element>
-    </section>
+    <Element name="contact">
+      <CanvasContainer />
+      {/* <SocialsContainer /> */}
+    </Element>
   );
 };
 
