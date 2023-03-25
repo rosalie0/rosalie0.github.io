@@ -16,10 +16,7 @@ const SingleProjectButtons = ({ project }: { project: Project }) => {
           target="_blank"
           aria-labelledby={deployAriaLabel}
         >
-          <button
-            id="deploy Link"
-            className="rounded-md p-1 text-rose-50 bg-amber-600 hover:bg-amber-700 flex items-center gap-1"
-          >
+          <button className="rounded-md p-1 text-rose-50 bg-amber-600 hover:bg-amber-700 flex items-center gap-1">
             Deploy <FiArrowRight />
           </button>
         </a>
