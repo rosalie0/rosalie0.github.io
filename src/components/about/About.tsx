@@ -1,36 +1,23 @@
 import React from "react";
 import { Element } from "react-scroll";
 import ComingSoon from "../utils/ComingSoon";
+import AboutHeading from "./AboutHeading";
+import AboutParagraphs from "./AboutParagraphs";
 
 function About() {
   return (
-    <Element name="about">
-      <div className="flex flex-col gap-4 p-4 items-center  md:flex-row">
-        <img src="https://placekitten.com/400/400" className="rounded-full" />
-        <div className="flex flex-col items-center md:items-start gap-4 p-4">
-          <h2 className="font-frag font-bold text-2xl text-rose-900">
-            Who is 「Rose」?
-          </h2>
-          <div className="text-base text-rose-900">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui ut
-              ornare lectus sit amet est placerat. Elementum tempus egestas sed
-              sed. Dignissim enim sit amet venenatis. Nullam vehicula ipsum a
-              arcu cursus vitae congue. Volutpat odio facilisis mauris sit amet
-              massa.
-            </p>
-            <p>
-              Maecenas accumsan lacus vel facilisis volutpat est velit egestas.
-              Enim nunc faucibus a pellentesque. Nam libero justo laoreet sit
-              amet cursus sit amet dictum. Commodo odio aenean sed adipiscing
-              diam donec adipiscing tristique risus. Duis tristique sollicitudin
-              nibh sit. Eu feugiat pretium nibh ipsum consequat nisl. Viverra
-              tellus in hac habitasse platea dictumst vestibulum. Enim sed
-              faucibus turpis in eu mi bibendum.
-            </p>
-          </div>
-        </div>
+    <Element
+      name="about"
+      className="flex flex-col gap-4 items-center lg:flex-row container p-4 lg:p-20"
+    >
+      <img
+        src="https://placekitten.com/600"
+        // h-[350px] md:h-full
+        className="rounded-full md:float-left max-h-100% h-auto"
+      />
+      <div className="flex flex-col items-center md:items-start gap-4 p-4">
+        <AboutHeading />
+        <AboutParagraphs />
       </div>
     </Element>
   );

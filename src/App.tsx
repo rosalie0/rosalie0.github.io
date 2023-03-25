@@ -7,6 +7,7 @@ import Homepage from "./components/Homepage";
 import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   // Piece of state for dark/light mode
@@ -20,10 +21,13 @@ function App() {
   return (
     <div className="bg-rose-50 dark:bg-stone-900">
       <Header theme={theme} setTheme={setTheme} />
-      <About />
-      <Projects />
-      <Homepage />
-      <Contact />
+      <div id="scroll-content">
+        <About />
+        <Projects />
+        <Homepage />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

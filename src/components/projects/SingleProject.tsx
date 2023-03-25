@@ -1,7 +1,7 @@
 import React from "react";
 import { Project } from "./projectData";
-import { FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
+import SingleProjectButtons from "./SingleProjectButtons";
 
 const SingleProject = ({
   project,
@@ -36,19 +36,7 @@ const SingleProject = ({
         <p className="whitespace-pre-wrap font-source text-md leading-snug text-left">
           {project.description}
         </p>
-
-        <div className="mt-1 flex gap-4 justify-center">
-          <a href={project.deployLink} target="_blank">
-            <button className="rounded-md p-1 text-rose-50 bg-amber-600 hover:bg-amber-700 flex items-center gap-1">
-              Deploy <FiArrowRight />
-            </button>
-          </a>
-          <a href={project.githubLink}>
-            <button className="rounded-md p-1 text-rose-50 bg-amber-600 hover:bg-amber-700 flex items-center gap-1">
-              Github <FiArrowRight />
-            </button>
-          </a>
-        </div>
+        <SingleProjectButtons project={project} />
       </div>
     </motion.div>
   );

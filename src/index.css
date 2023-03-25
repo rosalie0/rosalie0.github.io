@@ -5,7 +5,11 @@
 @tailwind utilities;
 
 @layer components {
-  html {
+  html,
+  body {
     /* scroll-behavior: smooth; */
+  }
+  #scroll-content {
+    overflow-x: hidden;
   }
 }
