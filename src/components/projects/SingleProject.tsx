@@ -11,7 +11,7 @@ const SingleProject = ({
   index: number;
 }) => {
   const isEvenIndex = !(index % 2);
-  console.log(isEvenIndex);
+
   return (
     <motion.div
       initial={isEvenIndex ? { opacity: 0, x: -50 } : { opacity: 0, x: 50 }}

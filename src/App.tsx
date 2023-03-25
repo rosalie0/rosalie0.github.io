@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { MotionConfig } from "framer-motion";
 
 // Components:
 import RouteContainer from "./components/RouteContainer";
@@ -18,17 +19,24 @@ function App() {
     } else document.documentElement.classList.remove("dark");
   }, [theme]);
 
+  /*
+  By setting reducedMotion it to "user", 
+  all motion components will automatically disable transform and layout animations, 
+  while preserving the animation of other values like opacity and backgroundColor.
+  */
   return (
-    <div className="bg-rose-50 dark:bg-stone-900">
-      <Header theme={theme} setTheme={setTheme} />
-      <div id="scroll-content">
-        <About />
-        <Projects />
-        <Homepage />
-        <Contact />
-        <Footer />
+    <MotionConfig reducedMotion="user">
+      <div className="bg-rose-50 dark:bg-stone-900">
+        <Header theme={theme} setTheme={setTheme} />
+        <div id="scroll-content">
+          <About />
+          <Projects />
+          <Homepage />
+          <Contact />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </MotionConfig>
   );
 }
 
