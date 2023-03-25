@@ -1,8 +1,8 @@
 import React from "react";
 import { Element } from "react-scroll";
-import ComingSoon from "../utils/ComingSoon";
 import AboutHeading from "./AboutHeading";
 import AboutParagraphs from "./AboutParagraphs";
+import portrait from "../../assets/portrait-square-95.webp";
 
 function About() {
   return (
@@ -11,9 +11,12 @@ function About() {
       className="flex flex-col gap-4 items-center lg:flex-row container p-4 lg:p-20"
     >
       <img
-        src="https://placekitten.com/600"
-        // h-[350px] md:h-full
+        src={portrait}
         className="rounded-full md:float-left max-h-100% h-auto"
+        // todo: give ti height/width value to reduce how content moves around on slow loading
+        // but need to have it reflect with responsive design
+        // height={"600px"}
+        // width={"600px"}
       />
       <div className="flex flex-col items-center md:items-start gap-4 p-4">
         <AboutHeading />
