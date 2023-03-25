@@ -1,9 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import greenCatIcon from "../../assets/cat-green-small.png";
-import lightGreenCatIcon from "../../assets/cat-light-green-small.png";
-import light200GreenCatIcon from "../../assets/cat-200-green-small.png";
-import { Link, animateScroll as scroll } from "react-scroll";
+import greenCatIcon from "../../assets/catIcon/cat-green-small.png";
+import light200GreenCatIcon from "../../assets/catIcon/cat-200-green-small.png";
+import { animateScroll as scroll } from "react-scroll";
 
 interface Props {
   theme: string;
