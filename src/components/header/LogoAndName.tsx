@@ -16,6 +16,7 @@ const LogoAndName = ({ theme }: Props) => {
     <a className="cursor-pointer" onClick={scrollToTop}>
       <div className="flex gap-2 items-center pl-4">
         <img
+          alt="a green cartoon cat face smiling"
           src={theme === "dark" ? light200GreenCatIcon : greenCatIcon}
           className="h-10"
         />

@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 // Components:
-import RouteContainer from "./components/RouteContainer";
 import Header from "./components/header/Header";
-import Homepage from "./components/Homepage";
 import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
@@ -24,7 +22,6 @@ function App() {
       <div id="scroll-content">
         <About />
         <Projects />
-        <Homepage />
         <Contact />
         <Footer />
       </div>

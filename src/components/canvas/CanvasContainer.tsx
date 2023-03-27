@@ -5,7 +5,7 @@ import MyCanvas from "./MyCanvas";
 const CanvasContainer = () => {
   return (
     <div style={{ position: "relative" }}>
-      {/* <SocialsContainerForCanvas /> */}
+      <SocialsContainerForCanvas />
       <MyCanvas />
     </div>
   );
