@@ -7,27 +7,28 @@ const SingleProject = ({ project }: { project: Project }) => {
     <div
       //      md:flex-row md:odd:flex-row-reverse md:p-2
 
-      className="flex flex-col gap-2 items-center  justify-center
-    border-solid border-2 rounded-lg 
+      className="border-solid border-2 rounded-lg 
      dark:border-emerald-50 border-emerald-900 
-     
      text-rose-900 dark:text-emerald-100
       dark:bg-emerald-900/50 bg-emerald-50/75
       hover:bg-emerald-50 shadow-md
-      w-[400px]"
+      grid grid-cols-1 md:grid-cols-2 
+      p-8 max-w-6xl
+      "
     >
+      {/* PROJECT IMAGE */}
       <img
-        className="rounded-md"
-        width={"500px"}
+        className="rounded-md mx-auto"
         src={project.image}
         alt="Screenshot previewing the web app"
       />
 
-      <div className="p-2 md:p-2 project-info">
+      {/* PROJECT TEXT INFO */}
+      <div className="p-2 project-info">
         <h3 className="font-frag text-2xl">{project.title}</h3>
         <h4 className="font-frag">{project.subtitle}</h4>
         <div>
-          <ul className="flex gap-x-0 gap-y  flex-wrap justify-center">
+          <ul className="flex flex-wrap justify-center">
             {project.techStack.map((skill, index) => (
               <li key={index} className="italic px-2 ">
                 {skill}
@@ -35,7 +36,8 @@ const SingleProject = ({ project }: { project: Project }) => {
             ))}
           </ul>
         </div>
-        <p className="whitespace-pre-wrap font-source text-md leading-snug text-left">
+        <hr className="border-rose-900 py-2 w-10/12 mx-auto" />
+        <p className="whitespace-pre-wrap font-source leading-snug text-left w-10/12 mx-auto">
           {project.description}
         </p>
         {project.note && <p className="font-source italic ">*{project.note}</p>}
