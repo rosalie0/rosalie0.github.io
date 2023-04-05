@@ -16,9 +16,6 @@ const SingleProject = ({ project }: { project: Project }) => {
         <h3 className="font-frag text-2xl">{project.title}</h3>
         <h4 className="font-frag">{project.subtitle}</h4>
         <div>
-          {/* {project.techStack.map((skill) => (
-            <p className="italic border-2">{skill}</p>
-          ))} */}
           <ul className="flex gap-x-0 gap-y  flex-wrap justify-center">
             {project.techStack.map((skill, index) => (
               <li key={index} className="italic px-2 ">
