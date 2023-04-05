@@ -24,11 +24,11 @@ const SingleProject = ({ project }: { project: Project }) => {
       />
 
       {/* PROJECT TEXT INFO */}
-      <div className="p-2 project-info">
+      <div className="p-5 project-info">
         <h3 className="font-frag text-2xl">{project.title}</h3>
         <h4 className="font-frag">{project.subtitle}</h4>
         <div>
-          <ul className="flex flex-wrap justify-center">
+          <ul className="flex flex-wrap justify-center pb-2">
             {project.techStack.map((skill, index) => (
               <li key={index} className="italic px-2 ">
                 {skill}
@@ -36,8 +36,8 @@ const SingleProject = ({ project }: { project: Project }) => {
             ))}
           </ul>
         </div>
-        <hr className="border-rose-900 py-2 w-10/12 mx-auto" />
-        <p className="whitespace-pre-wrap font-source leading-snug text-left w-10/12 mx-auto">
+        <hr className="border-rose-900 py-2 w-12/12 mx-auto" />
+        <p className="whitespace-pre-wrap font-source leading-snug text-left w-12/12 mx-auto">
           {project.description}
         </p>
         {project.note && <p className="font-source italic ">*{project.note}</p>}
