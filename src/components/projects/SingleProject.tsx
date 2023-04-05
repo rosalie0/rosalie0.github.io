@@ -13,6 +13,7 @@ const SingleProject = ({ project }: { project: Project }) => {
       dark:bg-emerald-900/50 bg-emerald-50/75
       hover:bg-emerald-50 shadow-md
       grid grid-cols-1 md:grid-cols-2 
+      items-center gap-5
       p-8 max-w-6xl
       "
     >
