@@ -6,7 +6,7 @@ const SingleProject = ({ project }: { project: Project }) => {
   return (
     <div
       className="border-solid border-2 rounded-lg
-      border-emerald-900 dark:border-none
+      border-rose-100 dark:border-none
       text-emerald-900 dark:text-stone-200
       bg-white/75 dark:bg-stone-800
      shadow-md
@@ -42,8 +42,8 @@ const SingleProject = ({ project }: { project: Project }) => {
         <p className="whitespace-pre-wrap font-source leading-snug text-left w-12/12 mx-auto">
           {project.description}
         </p>
-        {project.note && <p className="font-source italic ">*{project.note}</p>}
         <SingleProjectButtons project={project} />
+        {project.note && <p className="font-source italic ">*{project.note}</p>}
       </div>
     </div>
   );

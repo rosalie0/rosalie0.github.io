@@ -8,7 +8,10 @@ const SingleProjectButtons = ({ project }: { project: Project }) => {
   const videoAriaLabel = `Link to a video about the project: ${project.title}`;
 
   return (
-    <div className="mt-1 mb-2 flex flex-wrap gap-4 justify-center">
+    <div
+      className="mt-1 mb-2 pt-2
+     flex flex-wrap gap-4 justify-center"
+    >
       {/* Deploy Link */}
       {project.deployLink && (
         <a
