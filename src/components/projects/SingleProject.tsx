@@ -5,14 +5,12 @@ import SingleProjectButtons from "./SingleProjectButtons";
 const SingleProject = ({ project }: { project: Project }) => {
   return (
     <div
-      //      md:flex-row md:odd:flex-row-reverse md:p-2
-
-      className="border-solid border-2 rounded-lg 
-     dark:border-emerald-50 border-emerald-900 
-     text-rose-900 dark:text-emerald-100
-      dark:bg-emerald-900/50 bg-emerald-50/75
-      hover:bg-emerald-50 shadow-md
-      grid grid-cols-1 md:grid-cols-2 
+      className="border-solid border-2 rounded-lg
+      border-emerald-900 dark:border-none
+      text-emerald-900 dark:text-stone-200
+      bg-white/75 dark:bg-stone-800
+     shadow-md
+      grid grid-cols-1 lg:grid-cols-2 
       items-center gap-5
       p-8 max-w-6xl
       "
@@ -37,7 +35,10 @@ const SingleProject = ({ project }: { project: Project }) => {
             ))}
           </ul>
         </div>
-        <hr className="border-rose-900 py-2 w-12/12 mx-auto" />
+        <hr
+          className="border-rose-900 dark:border-stone-200
+        py-2 w-12/12 mx-auto"
+        />
         <p className="whitespace-pre-wrap font-source leading-snug text-left w-12/12 mx-auto">
           {project.description}
         </p>

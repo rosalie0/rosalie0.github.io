@@ -8,7 +8,7 @@ import { Element } from "react-scroll";
 function Projects() {
   return (
     <Element name="projects">
-      <div className="px-5 text-center">
+      <div className="px-5 text-center container">
         <IntroToProjects />
 
         <div className="flex flex-wrap justify-around gap-4">
