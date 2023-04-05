@@ -25,6 +25,7 @@ const SingleProject = ({ project }: { project: Project }) => {
         <p className="whitespace-pre-wrap font-source text-md leading-snug text-left">
           {project.description}
         </p>
+        {project.note && <p className="font-source italic">*{project.note}</p>}
         <SingleProjectButtons project={project} />
       </div>
     </div>

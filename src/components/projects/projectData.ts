@@ -15,7 +15,7 @@ class Project {
   deployLink?: string;
   githubLink?: string;
   videoLink?: string;
-
+  note?: string;
   constructor(data: Partial<Project>) {
     Object.assign(this, data);
   }
@@ -41,6 +41,7 @@ const capstone = new Project({
   deployLink: "https://codenames-0nt7.onrender.com/",
   githubLink: "https://github.com/2208-Capstone-Team-2/codenames",
   videoLink: "https://www.youtube.com/watch?v=nMLCx3XAIkE",
+  note: "The deploy may take a long time to load, please be patient.",
 });
 
 const graceShopper = new Project({
@@ -55,6 +56,7 @@ const graceShopper = new Project({
   deployLink: "https://comic-overflow.onrender.com/",
   githubLink: "https://github.com/2208-GS-Team-1/Comic-Overflow",
   videoLink: "https://www.youtube.com/watch?v=rbbKldsF4Gw",
+  note: "The deploy may take a long time to load, please be patient.",
 });
 
 const stackathon = new Project({
