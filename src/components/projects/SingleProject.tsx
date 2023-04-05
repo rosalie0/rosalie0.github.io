@@ -24,7 +24,7 @@ const SingleProject = ({ project }: { project: Project }) => {
 
       {/* PROJECT TEXT INFO */}
       <div className="p-5 project-info">
-        <h3 className="font-frag text-2xl">{project.title}</h3>
+        <h3 className="font-frag font-bold text-2xl">{project.title}</h3>
         <h4 className="font-frag">{project.subtitle}</h4>
         <div>
           <ul className="flex flex-wrap justify-center pb-2">
