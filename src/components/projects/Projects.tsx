@@ -8,10 +8,10 @@ import { Element } from "react-scroll";
 function Projects() {
   return (
     <Element name="projects">
-      <div className="px-5 text-center container">
+      <div className="container px-5 text-center ">
         <IntroToProjects />
 
-        <div className="flex flex-wrap justify-around gap-4">
+        <div className="flex flex-col items-center gap-4">
           {projects.map((project) => (
             // for 'odd' projects, reverse the flex direction
             <SingleProject key={project.title} project={project} />
