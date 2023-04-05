@@ -16,16 +16,21 @@ const SingleProject = ({ project }: { project: Project }) => {
         <h3 className="font-frag text-2xl">{project.title}</h3>
         <h4 className="font-frag">{project.subtitle}</h4>
         <div>
-          <ul>
-            {project.techStack.map((skill) => (
-              <li className="italic">{skill}</li>
+          {/* {project.techStack.map((skill) => (
+            <p className="italic border-2">{skill}</p>
+          ))} */}
+          <ul className="flex gap-x-0 gap-y  flex-wrap justify-center">
+            {project.techStack.map((skill, index) => (
+              <li key={index} className="italic px-2 ">
+                {skill}
+              </li>
             ))}
           </ul>
         </div>
         <p className="whitespace-pre-wrap font-source text-md leading-snug text-left">
           {project.description}
         </p>
-        {project.note && <p className="font-source italic">*{project.note}</p>}
+        {project.note && <p className="font-source italic ">*{project.note}</p>}
         <SingleProjectButtons project={project} />
       </div>
     </div>
