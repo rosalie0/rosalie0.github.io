@@ -4,7 +4,18 @@ import SingleProjectButtons from "./SingleProjectButtons";
 
 const SingleProject = ({ project }: { project: Project }) => {
   return (
-    <div className="flex flex-col md:flex-row md:p-2 gap-2 items-center md:odd:flex-row-reverse border-solid border-2 dark:border-emerald-50 border-emerald-900 rounded-lg text-rose-900 dark:text-emerald-100 dark:bg-emerald-900/50 bg-emerald-50/75 hover:bg-emerald-50 shadow-md">
+    <div
+      //      md:flex-row md:odd:flex-row-reverse md:p-2
+
+      className="flex flex-col gap-2 items-center  justify-center
+    border-solid border-2 rounded-lg 
+     dark:border-emerald-50 border-emerald-900 
+     
+     text-rose-900 dark:text-emerald-100
+      dark:bg-emerald-900/50 bg-emerald-50/75
+      hover:bg-emerald-50 shadow-md
+      w-[400px]"
+    >
       <img
         className="rounded-md"
         width={"500px"}
