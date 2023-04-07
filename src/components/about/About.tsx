@@ -6,10 +6,12 @@ import AboutDrawing from "./AboutDrawing";
 import AboutPhoto from "./AboutPhoto";
 
 function About() {
+  //flex flex-col lg:flex-row
   return (
     <Element
       name="about"
-      className="flex flex-col gap-4 items-center lg:flex-row container p-4 lg:p-20"
+      className="grid grid-cols-1 xl:grid-cols-2
+      gap-4 justify-items-center items-center p-12 container"
     >
       <AboutPhoto />
 

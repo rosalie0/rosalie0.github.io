@@ -16,8 +16,7 @@
 
   .coin-wrapper {
     cursor: pointer;
-    width: 600px;
-    height: 600px;
+
     position: relative;
     perspective: 650px;
     perspective-origin: center;
@@ -26,8 +25,7 @@
     user-select: none;
     pointer-events: none;
     position: absolute;
-    width: 600px;
-    height: 600px;
+
     backface-visibility: hidden;
   }
 }
