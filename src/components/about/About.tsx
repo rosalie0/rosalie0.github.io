@@ -4,6 +4,7 @@ import AboutHeading from "./AboutHeading";
 import AboutParagraphs from "./AboutParagraphs";
 import AboutDrawing from "./AboutDrawing";
 import AboutPhoto from "./AboutPhoto";
+import { motion } from "framer-motion";
 
 function About() {
   //flex flex-col lg:flex-row

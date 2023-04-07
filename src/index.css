@@ -16,16 +16,14 @@
 
   .coin-wrapper {
     cursor: pointer;
-
     position: relative;
     perspective: 650px;
     perspective-origin: center;
   }
   .coin {
     user-select: none;
-    pointer-events: none;
     position: absolute;
-
     backface-visibility: hidden;
+    transform-style: preserve-3d;
   }
 }
