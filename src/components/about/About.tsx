@@ -16,10 +16,14 @@ function About() {
     >
       <AboutPhoto />
 
-      <div className="flex flex-col items-center md:items-start gap-4 p-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { delay: 2 } }}
+        className="flex flex-col items-center md:items-start gap-4 p-4"
+      >
         <AboutHeading />
         <AboutParagraphs />
-      </div>
+      </motion.div>
     </Element>
   );
 }
