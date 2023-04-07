@@ -12,4 +12,22 @@
   #scroll-content {
     overflow-x: hidden;
   }
+  /* CSS for the about picture flip */
+
+  .coin-wrapper {
+    cursor: pointer;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    perspective: 650px;
+    perspective-origin: center;
+  }
+  .coin {
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    backface-visibility: hidden;
+  }
 }
