@@ -35,7 +35,7 @@ const capstone = new Project({
   ],
   description: `  Online version of the popular card game, Codenames.
 Features synchronized gameplay across all players' screens, responsive design, and user chat box for an engaging user experience.
-  Challenges included seeding random board layouts, and managing complex game logic and sockets.
+  Challenges included randomized board layouts, and managing sockets and complex game logic.
   Created by a team of five members over six weeks.`,
   image: codenamesImageTiny,
   deployLink: "https://codenames-0nt7.onrender.com/",
@@ -48,8 +48,8 @@ const graceShopper = new Project({
   title: "Comic Overflow",
   subtitle: "an e-commerce site",
   techStack: ["Javascript", "React", "Redux", "Express", "Sequelize"],
-  description: `  Comic Overflow is an e-commerce platform for comic book enthusiasts built over the course of a 2.5 week period in a team of four.
-  Features include user account creation & authentication, a persistent cart for both logged-in and guest users, Stripe API checkout. Users with 'admin' role are able to add, edit and delete products, orders and even other users all from the browser.
+  description: `  Comic Overflow is an e-commerce platform for comic book enthusiasts built over the course 2.5 weeks by a team of four.
+  Features include account creation & authentication, a persistent cart for both logged-in and guest users, and Stripe API checkout. Admin users are able to add, edit and delete products, orders and even other users, straight from their browser.
   API routes protected with JWT authentication.`,
   image: graceShopperImageTiny,
   deployLink: "https://comic-overflow.onrender.com/",
@@ -68,8 +68,8 @@ const stackathon = new Project({
     "React Three Fiber",
     "Firebase",
   ],
-  description: `  A solo foray into 3-D rendering on the web, this game has players collect points by clicking randomly generated insect models, with a timer feature and leaderboard where they can submit their score.
-    Features ported 3D blender models, font-based 3D text, and 2D photographs made into skyboxes.
+  description: `  A solo foray into 3D rendering on the web, this game has players collect points by clicking randomly generated insect models, with a timer feature and leaderboard where they can submit their score.
+    Features ported 3D blender models, font-based 3D text, and 2D photographs converted into skyboxes.
     Firebase Cloud Firestore was used for the leaderboard backend.`,
   image: bugHuntImageTiny,
   deployLink: "https://bug-hunt.onrender.com/",

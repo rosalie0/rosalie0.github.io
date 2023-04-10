@@ -10,7 +10,7 @@ const AboutParagraphs = () => {
         interesting projects.
       </p>
       <p>
-        I made my first website back elementary school to host my Sonic the
+        I made my first website back in elementary school to host my Sonic the
         Hedgehog fanart.
       </p>
       <p>
