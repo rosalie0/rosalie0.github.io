@@ -2,8 +2,7 @@ import React from "react";
 import { Element } from "react-scroll";
 import AboutHeading from "./AboutHeading";
 import AboutParagraphs from "./AboutParagraphs";
-import AboutDrawing from "./AboutDrawing";
-import AboutPhoto from "./AboutPhoto";
+import AboutCoin from "./AboutCoin";
 import { motion } from "framer-motion";
 
 function About() {
@@ -14,13 +13,10 @@ function About() {
       className="grid grid-cols-1 xl:grid-cols-2
       gap-4 justify-items-center items-center p-12 container"
     >
-      <AboutPhoto />
+      <AboutCoin />
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { delay: 2 } }}
-        className="flex flex-col items-center md:items-start gap-4 p-4"
-      >
+      {/* About Text Content */}
+      <motion.div className="flex flex-col items-center md:items-start gap-4 p-4">
         <AboutHeading />
         <AboutParagraphs />
       </motion.div>
