@@ -10,7 +10,7 @@ const LogoAndName = ({ theme }: { theme: string }) => {
 
   return (
     <a className="cursor-pointer" onClick={scrollToTop}>
-      <div className="flex gap-2 items-center sm:pl-4">
+      <div className="flex gap-2 items-center sm:pl-4 py-2">
         <img
           alt="a green cartoon cat face smiling"
           src={theme === "dark" ? light200GreenCatIcon : greenCatIcon}
