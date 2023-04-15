@@ -14,7 +14,7 @@ function About() {
       <AboutCoin />
 
       {/* About Text Content */}
-      <div className="flex flex-col items-center md:items-start gap-4 p-4">
+      <div className="flex flex-col items-center md:items-start gap-4 p-4 max-w-[100vw]">
         <AboutHeading />
         <AboutParagraphs />
       </div>
