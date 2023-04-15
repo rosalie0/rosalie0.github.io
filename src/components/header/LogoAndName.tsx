@@ -1,6 +1,6 @@
 import React from "react";
-import greenCatIcon from "../../assets/catIcon/cat-green-small.png";
-import light200GreenCatIcon from "../../assets/catIcon/cat-200-green-small.png";
+import greenCat from "../../assets/catIcon/cat-emerald-900.png";
+import whiteCat from "../../assets/catIcon/cat-white.png";
 import { animateScroll as scroll } from "react-scroll";
 
 const LogoAndName = ({ theme }: { theme: string }) => {
@@ -13,7 +13,7 @@ const LogoAndName = ({ theme }: { theme: string }) => {
       <div className="flex gap-2 items-center sm:pl-4 py-2">
         <img
           alt="a green cartoon cat face smiling"
-          src={theme === "dark" ? light200GreenCatIcon : greenCatIcon}
+          src={theme === "dark" ? whiteCat : greenCat}
           className="h-10"
         />
         <h1
