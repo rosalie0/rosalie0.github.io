@@ -3,10 +3,8 @@ import { Element } from "react-scroll";
 import AboutHeading from "./AboutHeading";
 import AboutParagraphs from "./AboutParagraphs";
 import AboutCoin from "./AboutCoin";
-import { motion } from "framer-motion";
 
 function About() {
-  //flex flex-col lg:flex-row
   return (
     <Element
       name="about"
@@ -16,10 +14,10 @@ function About() {
       <AboutCoin />
 
       {/* About Text Content */}
-      <motion.div className="flex flex-col items-center md:items-start gap-4 p-4">
+      <div className="flex flex-col items-center md:items-start gap-4 p-4 max-w-[100vw]">
         <AboutHeading />
         <AboutParagraphs />
-      </motion.div>
+      </div>
     </Element>
   );
 }
