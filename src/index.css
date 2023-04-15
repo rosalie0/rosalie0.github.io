@@ -5,11 +5,15 @@
 @tailwind utilities;
 
 @layer components {
+  html,
+  body {
+    overflow-x: hidden;
+  }
   #scroll-content {
     overflow-x: hidden;
   }
-
   /* CSS for the about picture flip */
+
   .coin-wrapper {
     cursor: pointer;
     position: relative;
