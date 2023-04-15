@@ -28,7 +28,12 @@ function Header({ theme, setTheme }: ThemeProps) {
   return (
     <div
       ref={headerRef}
-      className="sticky top-0 z-10 bg-inherit rounded-b-lg flex flex-col md:flex-row items-center flex-wrap justify-between align-middle pb-1 border-solid border-b-2 border-rose-200 dark:border-amber-900"
+      className="sticky top-0 z-10 
+      bg-inherit rounded-b-lg 
+      flex flex-col md:flex-row items-center flex-wrap justify-between align-middle
+      
+      pb-1 
+      border-solid border-b-2 border-rose-200 dark:border-amber-900"
     >
       <div className="flex flex-col md:flex-row items-center flex-wrap align-middle">
         <LogoAndName theme={theme} />
