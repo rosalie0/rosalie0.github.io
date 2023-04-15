@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-// ES6 Imports
 import { Link } from "react-scroll";
-
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
 const Navbar = ({ offsetHeight }: { offsetHeight: number }) => {
