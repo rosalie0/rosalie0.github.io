@@ -3,11 +3,7 @@ import greenCatIcon from "../../assets/catIcon/cat-green-small.png";
 import light200GreenCatIcon from "../../assets/catIcon/cat-200-green-small.png";
 import { animateScroll as scroll } from "react-scroll";
 
-interface Props {
-  theme: string;
-}
-
-const LogoAndName = ({ theme }: Props) => {
+const LogoAndName = ({ theme }: { theme: string }) => {
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
