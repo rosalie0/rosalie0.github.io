@@ -18,7 +18,6 @@ const DarkModeButton = ({ theme, setTheme }: ThemeProps) => {
         //aria-label can be used in cases where text that could label the element is not visible.
         aria-label="dark or light mode button"
         className="text-emerald-900 dark:text-emerald-200 font-bold text-xl py-2 px-2"
-        //className="bg-amber-600 hover:bg-amber-700 text-white dark:bg-amber-200 dark:hover:bg-amber-300 dark:text-black font-bold py-2 px-4 rounded"
         onClick={handleThemeSwitch}
       >
         {theme === "dark" ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
