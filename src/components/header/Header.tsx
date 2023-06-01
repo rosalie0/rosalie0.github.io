@@ -29,7 +29,8 @@ function Header({ theme, setTheme }: ThemeProps) {
     <div
       ref={headerRef}
       className="
-      sticky top-0 z-10 
+      fixed w-full
+       top-0 z-10 
       bg-inherit rounded-b-lg 
       flex flex-col md:flex-row items-center flex-wrap justify-between align-middle
       pb-1 
