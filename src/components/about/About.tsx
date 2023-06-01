@@ -9,7 +9,9 @@ function About() {
     <Element
       name="about"
       className="grid grid-cols-1 xl:grid-cols-2
-      gap-4 justify-items-center items-center p-12 container"
+      gap-4 justify-items-center items-center
+      px-12 pb-12 pt-36 md:pt-20 
+      container"
     >
       <AboutCoin />
 
