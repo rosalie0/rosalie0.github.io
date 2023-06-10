@@ -15,12 +15,16 @@ import { Element } from "react-scroll";
 export default function Updates() {
   return (
     <Element name="timeline">
-      <div className="max-w-3xl mx-auto text-emerald-900 dark:text-emerald-50">
+      <div className="max-w-3xl mx-auto text-emerald-900 dark:text-emerald-50 pb-16">
         <div className="flex flex-col items-center p-4 pb-10 gap-1">
           <HiOutlineFlag className="text-6xl" />
           <h2 className="text-4xl font-frag font-bold">Timeline</h2>
         </div>
-        <div className="">
+        <div
+          className="border-solid border-2 rounded-lg shadow-md
+      border-amber-300 dark:border-none
+      bg-white/75 dark:bg-stone-800"
+        >
           <Timeline
             sx={{
               [`& .${timelineOppositeContentClasses.root}`]: {
