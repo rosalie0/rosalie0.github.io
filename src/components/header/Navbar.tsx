@@ -38,6 +38,18 @@ const Navbar = ({ offsetHeight }: { offsetHeight: number }) => {
       </Link>
 
       <Link
+        to="timeline"
+        className={hoverStyles}
+        activeClass={activeLinkStyles}
+        smooth={true}
+        offset={offsetHeight}
+        isDynamic={true}
+        spy={true}
+      >
+        {"<"}timeline{">"}
+      </Link>
+
+      <Link
         to="projects"
         className={hoverStyles}
         activeClass={activeLinkStyles}

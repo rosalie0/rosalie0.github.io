@@ -6,6 +6,7 @@ import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import MyTimeline from "./components/timeline/MyTimeline";
 
 function App() {
   // Piece of state for dark/light mode
@@ -21,6 +22,7 @@ function App() {
       <Header theme={theme} setTheme={setTheme} />
       <div id="scroll-content">
         <About />
+        <MyTimeline />
         <Projects />
         <Contact />
         <Footer />
