@@ -12,7 +12,7 @@ import {
 import { HiOutlineFlag } from "react-icons/hi";
 import { Element } from "react-scroll";
 
-export default function Updates() {
+export default function MyTimeline() {
   return (
     <Element name="timeline">
       <div className="max-w-3xl mx-auto text-emerald-900 dark:text-emerald-50 pb-16">
@@ -21,7 +21,7 @@ export default function Updates() {
           <h2 className="text-4xl font-frag font-bold">Timeline</h2>
         </div>
         <div
-          className="border-solid border-2 rounded-lg shadow-md
+          className="border-solid border-2 rounded-lg shadow-md py-4
       border-amber-300 dark:border-none
       bg-white/75 dark:bg-stone-800"
         >
