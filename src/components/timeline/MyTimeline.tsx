@@ -133,7 +133,7 @@ export default function MyTimeline() {
                 <TimelineDot color="warning" />
               </TimelineSeparator>
               <TimelineContent>
-                Accepted a position as a Quality Assurance Engineer I at{" "}
+                Started as a Quality Assurance Engineer I at{" "}
                 <a
                   className="underline underline-offset-2"
                   href="https://www.qawolf.com/"
