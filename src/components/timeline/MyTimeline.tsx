@@ -110,6 +110,7 @@ export default function MyTimeline() {
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color="warning" />
+                <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent>
                 Accepted a Software Engineering Summer Internship at{" "}
@@ -119,6 +120,26 @@ export default function MyTimeline() {
                   target="_blank"
                 >
                   MoneyLion
+                </a>
+                .
+              </TimelineContent>
+            </TimelineItem>
+
+            <TimelineItem>
+              <TimelineOppositeContent>
+                <p className="italic">Aug 2023</p>
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot color="warning" />
+              </TimelineSeparator>
+              <TimelineContent>
+                Accepted a position as a Quality Assurance Engineer I at{" "}
+                <a
+                  className="underline underline-offset-2"
+                  href="https://www.qawolf.com/"
+                  target="_blank"
+                >
+                  QA Wolf
                 </a>
                 .
               </TimelineContent>
